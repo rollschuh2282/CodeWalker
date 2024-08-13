@@ -98,7 +98,7 @@ namespace CodeWalker.Tools
         private void FileSearchFolderBrowseButton_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog.SelectedPath = FileSearchFolderTextBox.Text;
-            DialogResult res = FolderBrowserDialog.ShowDialogNew();
+            DialogResult res = FolderBrowserDialog.ShowDialog();
             if (res == DialogResult.OK)
             {
                 FileSearchFolderTextBox.Text = FolderBrowserDialog.SelectedPath;

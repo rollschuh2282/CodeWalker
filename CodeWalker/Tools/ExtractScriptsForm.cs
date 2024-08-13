@@ -63,7 +63,7 @@ namespace CodeWalker.Tools
         private void OutputFolderBrowseButton_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog.SelectedPath = OutputFolderTextBox.Text;
-            DialogResult res = FolderBrowserDialog.ShowDialogNew();
+            DialogResult res = FolderBrowserDialog.ShowDialog();
             if (res == DialogResult.OK)
             {
                 OutputFolderTextBox.Text = FolderBrowserDialog.SelectedPath;

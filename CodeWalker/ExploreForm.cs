@@ -2063,7 +2063,7 @@ namespace CodeWalker
                 FolderBrowserDialog.SelectedPath = selpath;
             }
 
-            if (FolderBrowserDialog.ShowDialogNew() != DialogResult.OK) return "";
+            if (FolderBrowserDialog.ShowDialog() != DialogResult.OK) return "";
             string folderpath = FolderBrowserDialog.SelectedPath;
             if (!folderpath.EndsWith("\\")) folderpath += "\\";
 
