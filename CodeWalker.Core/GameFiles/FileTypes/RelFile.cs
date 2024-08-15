@@ -13306,6 +13306,7 @@ namespace CodeWalker.GameFiles
             BladeConeAtten = br.ReadInt16();
             ThumpConeUpAngle = br.ReadUInt16();
             ThumpConeDownAngle = br.ReadUInt16();
+            ThumpConeAtten = br.ReadInt16();
             ScannerMake = br.ReadUInt32();
             ScannerModel = br.ReadUInt32();
             ScannerCategory = br.ReadUInt32();
@@ -13413,6 +13414,7 @@ namespace CodeWalker.GameFiles
             bw.Write(BladeConeAtten);
             bw.Write(ThumpConeUpAngle);
             bw.Write(ThumpConeDownAngle);
+            bw.Write(ThumpConeAtten);
             bw.Write(ScannerMake);
             bw.Write(ScannerModel);
             bw.Write(ScannerCategory);
@@ -13513,6 +13515,7 @@ namespace CodeWalker.GameFiles
             RelXml.ValueTag(sb, indent, "BladeConeAtten", BladeConeAtten.ToString());
             RelXml.ValueTag(sb, indent, "ThumpConeUpAngle", ThumpConeUpAngle.ToString());
             RelXml.ValueTag(sb, indent, "ThumpConeDownAngle", ThumpConeDownAngle.ToString());
+            RelXml.ValueTag(sb, indent, "ThumpConeAtten", ThumpConeAtten.ToString());
             RelXml.StringTag(sb, indent, "ScannerMake", RelXml.HashString(ScannerMake));
             RelXml.StringTag(sb, indent, "ScannerModel", RelXml.HashString(ScannerModel));
             RelXml.StringTag(sb, indent, "ScannerCategory", RelXml.HashString(ScannerCategory));
@@ -13613,6 +13616,7 @@ namespace CodeWalker.GameFiles
             BladeConeAtten = (short)Xml.GetChildIntAttribute(node, "BladeConeAtten", "value");
             ThumpConeUpAngle = (ushort)Xml.GetChildIntAttribute(node, "ThumpConeUpAngle", "value");
             ThumpConeDownAngle = (ushort)Xml.GetChildIntAttribute(node, "ThumpConeDownAngle", "value");
+            ThumpConeAtten = (short)Xml.GetChildIntAttribute(node, "ThumpConeAtten", "value");
             ScannerMake = XmlRel.GetHash(Xml.GetChildInnerText(node, "ScannerMake"));
             ScannerModel = XmlRel.GetHash(Xml.GetChildInnerText(node, "ScannerModel"));
             ScannerCategory = XmlRel.GetHash(Xml.GetChildInnerText(node, "ScannerCategory"));
