@@ -12118,21 +12118,19 @@ namespace CodeWalker.GameFiles
         public MetaHash ResoLoop { get; set; }
         public MetaHash ResoLoopVol { get; set; }
         public MetaHash ResoPitch { get; set; }
-        public MetaHash WaterTurbulance { get; set; }
+        public MetaHash WaterTurbulence { get; set; }
         public MetaHash WaterTurbulanceVol { get; set; }
         public MetaHash WaterTurbulancePitch { get; set; }
         public MetaHash ScannerMake { get; set; }
         public MetaHash ScannerModel { get; set; }
         public MetaHash ScannerCategory { get; set; }
         public MetaHash ScannerVehicleSettings { get; set; }
-        public byte RadioType { get; set; }
-        public byte RadioGenre { get; set; }
-        public short padding00 { get; set; }
+        public FlagsUint RadioType { get; set; }
         public MetaHash HornLoop { get; set; }
         public MetaHash IgnitionOneShot { get; set; }
         public MetaHash ShutdownOneShot { get; set; }
-        public MetaHash EngineVolPostSubmix { get; set; }
-        public MetaHash ExhaustVolPostSubmix { get; set; }
+        public short EngineVolPostSubmix { get; set; }
+        public short ExhaustVolPostSubmix { get; set; }
         public MetaHash EngineSynthDef { get; set; }
         public MetaHash EngineSynthPreset { get; set; }
         public MetaHash ExhaustSynthDef { get; set; }
@@ -12160,6 +12158,7 @@ namespace CodeWalker.GameFiles
         public MetaHash DryLandHardScrape { get; set; }
         public MetaHash DryLandHardImpact { get; set; }
         public MetaHash WindClothSound { get; set; }
+        public MetaHash FireAudio { get; set; }
         public MetaHash DoorOpen { get; set; }
         public MetaHash DoorClose { get; set; }
         public MetaHash DoorLimit { get; set; }
@@ -12193,21 +12192,19 @@ namespace CodeWalker.GameFiles
             ResoLoop = br.ReadUInt32();
             ResoLoopVol = br.ReadUInt32();
             ResoPitch = br.ReadUInt32();
-            WaterTurbulance = br.ReadUInt32();
+            WaterTurbulence = br.ReadUInt32();
             WaterTurbulanceVol = br.ReadUInt32();
             WaterTurbulancePitch = br.ReadUInt32();
             ScannerMake = br.ReadUInt32();
             ScannerModel = br.ReadUInt32();
             ScannerCategory = br.ReadUInt32();
             ScannerVehicleSettings = br.ReadUInt32();
-            RadioType = br.ReadByte();
-            RadioGenre = br.ReadByte();
-            padding00 = br.ReadInt16();
+            RadioType = br.ReadUInt32();
             HornLoop = br.ReadUInt32();
             IgnitionOneShot = br.ReadUInt32();
             ShutdownOneShot = br.ReadUInt32();
-            EngineVolPostSubmix = br.ReadUInt32();
-            ExhaustVolPostSubmix = br.ReadUInt32();
+            EngineVolPostSubmix = br.ReadInt16();
+            ExhaustVolPostSubmix = br.ReadInt16();
             EngineSynthDef = br.ReadUInt32();
             EngineSynthPreset = br.ReadUInt32();
             ExhaustSynthDef = br.ReadUInt32();
@@ -12235,6 +12232,7 @@ namespace CodeWalker.GameFiles
             DryLandHardScrape = br.ReadUInt32();
             DryLandHardImpact = br.ReadUInt32();
             WindClothSound = br.ReadUInt32();
+            FireAudio = br.ReadUInt32();
             DoorOpen = br.ReadUInt32();
             DoorClose = br.ReadUInt32();
             DoorLimit = br.ReadUInt32();
@@ -12264,7 +12262,7 @@ namespace CodeWalker.GameFiles
             bw.Write(ResoLoop);
             bw.Write(ResoLoopVol);
             bw.Write(ResoPitch);
-            bw.Write(WaterTurbulance);
+            bw.Write(WaterTurbulence);
             bw.Write(WaterTurbulanceVol);
             bw.Write(WaterTurbulancePitch);
             bw.Write(ScannerMake);
@@ -12272,8 +12270,6 @@ namespace CodeWalker.GameFiles
             bw.Write(ScannerCategory);
             bw.Write(ScannerVehicleSettings);
             bw.Write(RadioType);
-            bw.Write(RadioGenre);
-            bw.Write(padding00);
             bw.Write(HornLoop);
             bw.Write(IgnitionOneShot);
             bw.Write(ShutdownOneShot);
@@ -12306,6 +12302,7 @@ namespace CodeWalker.GameFiles
             bw.Write(DryLandHardScrape);
             bw.Write(DryLandHardImpact);
             bw.Write(WindClothSound);
+            bw.Write(FireAudio);
             bw.Write(DoorOpen);
             bw.Write(DoorClose);
             bw.Write(DoorLimit);
@@ -12334,24 +12331,23 @@ namespace CodeWalker.GameFiles
             RelXml.StringTag(sb, indent, "ResoLoop", RelXml.HashString(ResoLoop));
             RelXml.StringTag(sb, indent, "ResoLoopVol", RelXml.HashString(ResoLoopVol));
             RelXml.StringTag(sb, indent, "ResoPitch", RelXml.HashString(ResoPitch));
-            RelXml.StringTag(sb, indent, "WaterTurbulance", RelXml.HashString(WaterTurbulance));
+            RelXml.StringTag(sb, indent, "WaterTurbulence", RelXml.HashString(WaterTurbulence));
             RelXml.StringTag(sb, indent, "WaterTurbulanceVol", RelXml.HashString(WaterTurbulanceVol));
             RelXml.StringTag(sb, indent, "WaterTurbulancePitch", RelXml.HashString(WaterTurbulancePitch));
             RelXml.StringTag(sb, indent, "ScannerMake", RelXml.HashString(ScannerMake));
             RelXml.StringTag(sb, indent, "ScannerModel", RelXml.HashString(ScannerModel));
             RelXml.StringTag(sb, indent, "ScannerCategory", RelXml.HashString(ScannerCategory));
             RelXml.StringTag(sb, indent, "ScannerVehicleSettings", RelXml.HashString(ScannerVehicleSettings));
-            RelXml.ValueTag(sb, indent, "RadioType", RadioType.ToString());
-            RelXml.ValueTag(sb, indent, "RadioGenre", RadioGenre.ToString());
+            RelXml.ValueTag(sb, indent, "RadioType", "0x" + RadioType.Hex);
             RelXml.StringTag(sb, indent, "HornLoop", RelXml.HashString(HornLoop));
             RelXml.StringTag(sb, indent, "IgnitionOneShot", RelXml.HashString(IgnitionOneShot));
             RelXml.StringTag(sb, indent, "ShutdownOneShot", RelXml.HashString(ShutdownOneShot));
-            RelXml.StringTag(sb, indent, "EngineVolPostSubmix", RelXml.HashString(EngineVolPostSubmix));
-            RelXml.StringTag(sb, indent, "ExhaustVolPostSubmix", RelXml.HashString(ExhaustVolPostSubmix));
+            RelXml.StringTag(sb, indent, "EngineVolPostSubmix", EngineVolPostSubmix.ToString());
+            RelXml.StringTag(sb, indent, "ExhaustVolPostSubmix", ExhaustVolPostSubmix.ToString());
             RelXml.StringTag(sb, indent, "EngineSynthDef", RelXml.HashString(EngineSynthDef));
             RelXml.StringTag(sb, indent, "EngineSynthPreset", RelXml.HashString(EngineSynthPreset));
             RelXml.StringTag(sb, indent, "ExhaustSynthDef", RelXml.HashString(ExhaustSynthDef));
-            RelXml.StringTag(sb, indent, "ExhaustSynthPreset", RelXml.HashString(ExhaustSynthPreset));
+            RelXml.StringTag(sb, indent, "ExhaustSubmixPreset", RelXml.HashString(ExhaustSynthPreset));
             RelXml.StringTag(sb, indent, "VehicleCollisions", RelXml.HashString(VehicleCollisions));
             RelXml.StringTag(sb, indent, "EngineSubmixVoice", RelXml.HashString(EngineSubmixVoice));
             RelXml.StringTag(sb, indent, "ExhaustSubmixVoice", RelXml.HashString(ExhaustSubmixVoice));
@@ -12375,6 +12371,7 @@ namespace CodeWalker.GameFiles
             RelXml.StringTag(sb, indent, "DryLandHardScrape", RelXml.HashString(DryLandHardScrape));
             RelXml.StringTag(sb, indent, "DryLandHardImpact", RelXml.HashString(DryLandHardImpact));
             RelXml.StringTag(sb, indent, "WindClothSound", RelXml.HashString(WindClothSound));
+            RelXml.StringTag(sb, indent, "FireAudio", RelXml.HashString(FireAudio));
             RelXml.StringTag(sb, indent, "DoorOpen", RelXml.HashString(DoorOpen));
             RelXml.StringTag(sb, indent, "DoorClose", RelXml.HashString(DoorClose));
             RelXml.StringTag(sb, indent, "DoorLimit", RelXml.HashString(DoorLimit));
@@ -12403,20 +12400,19 @@ namespace CodeWalker.GameFiles
             ResoLoop = XmlRel.GetHash(Xml.GetChildInnerText(node, "ResoLoop"));
             ResoLoopVol = XmlRel.GetHash(Xml.GetChildInnerText(node, "ResoLoopVol"));
             ResoPitch = XmlRel.GetHash(Xml.GetChildInnerText(node, "ResoPitch"));
-            WaterTurbulance = XmlRel.GetHash(Xml.GetChildInnerText(node, "WaterTurbulance"));
+            WaterTurbulence = XmlRel.GetHash(Xml.GetChildInnerText(node, "WaterTurbulence"));
             WaterTurbulanceVol = XmlRel.GetHash(Xml.GetChildInnerText(node, "WaterTurbulanceVol"));
             WaterTurbulancePitch = XmlRel.GetHash(Xml.GetChildInnerText(node, "WaterTurbulancePitch"));
             ScannerMake = XmlRel.GetHash(Xml.GetChildInnerText(node, "ScannerMake"));
             ScannerModel = XmlRel.GetHash(Xml.GetChildInnerText(node, "ScannerModel"));
             ScannerCategory = XmlRel.GetHash(Xml.GetChildInnerText(node, "ScannerCategory"));
             ScannerVehicleSettings = XmlRel.GetHash(Xml.GetChildInnerText(node, "ScannerVehicleSettings"));
-            RadioType = (byte)Xml.GetChildUIntAttribute(node, "RadioType", "value");
-            RadioGenre = (byte)Xml.GetChildUIntAttribute(node, "RadioGenre", "value");
+            RadioType = Xml.GetChildUIntAttribute(node, "RadioType", "value");
             HornLoop = XmlRel.GetHash(Xml.GetChildInnerText(node, "HornLoop"));
             IgnitionOneShot = XmlRel.GetHash(Xml.GetChildInnerText(node, "IgnitionOneShot"));
             ShutdownOneShot = XmlRel.GetHash(Xml.GetChildInnerText(node, "ShutdownOneShot"));
-            EngineVolPostSubmix = XmlRel.GetHash(Xml.GetChildInnerText(node, "EngineVolPostSubmix"));
-            ExhaustVolPostSubmix = XmlRel.GetHash(Xml.GetChildInnerText(node, "ExhaustVolPostSubmix"));
+            EngineVolPostSubmix = (short)Xml.GetChildUIntAttribute(node, "EngineVolPostSubmix", "value");
+            ExhaustVolPostSubmix = (short)Xml.GetChildUIntAttribute(node, "ExhaustVolPostSubmix", "value");
             EngineSynthDef = XmlRel.GetHash(Xml.GetChildInnerText(node, "EngineSynthDef"));
             EngineSynthPreset = XmlRel.GetHash(Xml.GetChildInnerText(node, "EngineSynthPreset"));
             ExhaustSynthDef = XmlRel.GetHash(Xml.GetChildInnerText(node, "ExhaustSynthDef"));
@@ -12444,6 +12440,7 @@ namespace CodeWalker.GameFiles
             DryLandHardScrape = XmlRel.GetHash(Xml.GetChildInnerText(node, "DryLandHardScrape"));
             DryLandHardImpact = XmlRel.GetHash(Xml.GetChildInnerText(node, "DryLandHardImpact"));
             WindClothSound = XmlRel.GetHash(Xml.GetChildInnerText(node, "WindClothSound"));
+            FireAudio = XmlRel.GetHash(Xml.GetChildInnerText(node, "FireAudio"));
             DoorOpen = XmlRel.GetHash(Xml.GetChildInnerText(node, "DoorOpen"));
             DoorClose = XmlRel.GetHash(Xml.GetChildInnerText(node, "DoorClose"));
             DoorLimit = XmlRel.GetHash(Xml.GetChildInnerText(node, "DoorLimit"));
@@ -12460,23 +12457,24 @@ namespace CodeWalker.GameFiles
         public override MetaHash[] GetCurveHashes()
         {
             return new[] { Engine1Vol, Engine1Pitch, Engine2Vol, Engine2Pitch, LowResoLoopVol, LowResoPitch, ResoLoopVol, ResoPitch,
-                WaterTurbulanceVol, IdleHullSlapLoop, EngineStartUp, SubTurningSweetenerSound, RevsToSweetenerVolume, TurningToSweetenerVolume };
+                WaterTurbulanceVol, IdleHullSlapSpeedToVol, SubTurningEnginePitchModifier, RevsToSweetenerVolume, TurningToSweetenerVolume, TurningToSweetenerPitch };
         }
         public override MetaHash[] GetSynthHashes()
         {
-            return new[] { ExhaustVolPostSubmix, EngineSynthDef, EngineSynthPreset, ExhaustSynthDef };
+            return new[] { EngineSynthDef, EngineSynthPreset, ExhaustSynthDef, ExhaustSynthPreset };
         }
         public override MetaHash[] GetSoundHashes()
         {
-            return new[] { Engine1Loop, Engine2Loop, LowResoLoop, ResoLoop, WaterTurbulance, ScannerMake, ScannerModel, ScannerCategory, HornLoop, IgnitionOneShot, ShutdownOneShot, VehicleCollisions, EngineSubmixVoice,
-                ExhaustSubmixVoice, LeftWaterSound, GranularEngine, BankSpraySound, IgnitionLoop, SubTurningEnginePitchModifier, TurningToSweetenerPitch, DryLandHardScrape, DryLandHardImpact, WindClothSound, DoorOpen, DoorClose,
+            return new[] { Engine1Loop, Engine2Loop, LowResoLoop, ResoLoop, WaterTurbulence, ScannerMake, ScannerModel, ScannerCategory, HornLoop, IgnitionOneShot, ShutdownOneShot, EngineSubmixVoice, ExhaustSubmixVoice,
+                WaveHitSound, IdleHullSlapLoop, BankSpraySound, IgnitionLoop, EngineStartUp, SubTurningSweetenerSound, DryLandScrape, DryLandHardScrape, DryLandHardImpact, WindClothSound, FireAudio, DoorOpen, DoorClose,
                 DoorLimit, DoorStartClose, SubExtrasSound, SFXBankSound, SubmersibleCreaksSound, WaveHitBigAirSound, VehicleRainSound, VehicleRainSoundInterior };
         }
         public override MetaHash[] GetGameHashes()
         {
-            return new[] { ScannerVehicleSettings, ExhaustSynthPreset, IdleHullSlapSpeedToVol };
+            return new[] { ScannerVehicleSettings, VehicleCollisions, GranularEngine };
         }
     }
+
 
     [TC(typeof(EXP))] 
     public class Dat151BicycleAudioSettings : Dat151RelData
