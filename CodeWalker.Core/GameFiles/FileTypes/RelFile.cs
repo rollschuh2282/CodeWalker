@@ -9802,9 +9802,10 @@ namespace CodeWalker.GameFiles
         public FlagsUint Flags { get; set; }
         public Vector4 ActivationBox { get; set; }
         public float RotationAngle { get; set; }
-        public uint NextShoreline { get; set; }
-        public uint LakeSize { get; set; }
-        public int PointsCount { get; set; }
+        public MetaHash NextShoreline { get; set; }
+        public byte LakeSize { get; set; }
+        public byte NumShorelinePoints { get; set; }
+        public short padding00 { get; set; }
         public Vector2[] Points { get; set; }
 
         public Dat151ShoreLineLakeAudioSettings(RelFile rel) : base(rel)
@@ -9816,16 +9817,14 @@ namespace CodeWalker.GameFiles
         {
             Flags = br.ReadUInt32();
             ActivationBox = new Vector4(br.ReadSingle(), br.ReadSingle(), br.ReadSingle(), br.ReadSingle());
-            RotationAngle = br.ReadInt32();
+            RotationAngle = br.ReadSingle();
             NextShoreline = br.ReadUInt32();
-            LakeSize = br.ReadUInt32();
+            LakeSize = br.ReadByte();
+            NumShorelinePoints = br.ReadByte();
+            padding00 = br.ReadInt16();
 
-            byte b1 = (byte)((LakeSize) & 0xFF);
-            byte b2 = (byte)((LakeSize>>8) & 0xFF);
-            PointsCount = b2;
-
-            var points = new Vector2[PointsCount];
-            for (int i = 0; i < PointsCount; i++)
+            var points = new Vector2[NumShorelinePoints];
+            for (int i = 0; i < NumShorelinePoints; i++)
             {
                 points[i] = new Vector2(br.ReadSingle(), br.ReadSingle());
             }
@@ -9843,8 +9842,9 @@ namespace CodeWalker.GameFiles
             bw.Write(RotationAngle);
             bw.Write(NextShoreline);
             bw.Write(LakeSize);
+            bw.Write(NumShorelinePoints);
 
-            for (int i = 0; i < PointsCount; i++)
+            for (int i = 0; i < NumShorelinePoints; i++)
             {
                 bw.Write(Points[i].X);
                 bw.Write(Points[i].Y);
@@ -9855,7 +9855,7 @@ namespace CodeWalker.GameFiles
             RelXml.ValueTag(sb, indent, "Flags", "0x" + Flags.Hex);
             RelXml.SelfClosingTag(sb, indent, "ActivationBox " + FloatUtil.GetVector4XmlString(ActivationBox));
             RelXml.ValueTag(sb, indent, "RotationAngle", FloatUtil.ToString(RotationAngle));
-            RelXml.ValueTag(sb, indent, "NextShoreline", NextShoreline.ToString());
+            RelXml.StringTag(sb, indent, "NextShoreline", RelXml.HashString(NextShoreline));
             RelXml.ValueTag(sb, indent, "LakeSize", LakeSize.ToString());
             RelXml.WriteRawArray(sb, Points, indent, "Points", "", RelXml.FormatVector2, 1);
         }
@@ -9864,10 +9864,10 @@ namespace CodeWalker.GameFiles
             Flags = Xml.GetChildUIntAttribute(node, "Flags", "value");
             ActivationBox = Xml.GetChildVector4Attributes(node, "ActivationBox");
             RotationAngle = Xml.GetChildFloatAttribute(node, "RotationAngle", "value");
-            NextShoreline = Xml.GetChildUIntAttribute(node, "NextShoreline", "value");
-            LakeSize = Xml.GetChildUIntAttribute(node, "LakeSize", "value");
+            NextShoreline = XmlRel.GetHash(Xml.GetChildInnerText(node, "NextShoreline"));
+            LakeSize = (byte)Xml.GetChildUIntAttribute(node, "LakeSize", "value");
             Points = Xml.GetChildRawVector2Array(node, "Points");
-            PointsCount = Points?.Length ?? 0;
+            NumShorelinePoints = (byte)(Points?.Length ?? 0);
         }
     }
 
