@@ -7880,99 +7880,110 @@ namespace CodeWalker.GameFiles
     [TC(typeof(EXP))] 
     public class Dat151CollisionMaterialSettings : Dat151RelData
     {
-        public FlagsUint Unk00 { get; set; }
-        public MetaHash Unk01 { get; set; }
-        public MetaHash Unk02 { get; set; }
-        public MetaHash Unk03 { get; set; }
-        public MetaHash Unk04 { get; set; }
-        public MetaHash Unk05 { get; set; }
-        public MetaHash Unk06 { get; set; }
-        public MetaHash Unk07 { get; set; }
-        public MetaHash Unk08 { get; set; }
-        public MetaHash Unk09 { get; set; }
-        public MetaHash Unk10 { get; set; }
-        public MetaHash Unk11 { get; set; }
-        public MetaHash Unk12 { get; set; }
-        public MetaHash Unk13 { get; set; }
-        public MetaHash Unk14 { get; set; }
-        public int Unk15 { get; set; }
-        public int Unk16 { get; set; }
-        public int Unk17 { get; set; }
-        public int Unk18 { get; set; }
-        public float Unk19 { get; set; }
-        public int Unk20 { get; set; }
-        public float Unk21 { get; set; }
-        public float Unk22 { get; set; }
-        public float Unk23 { get; set; }
-        public float Unk24 { get; set; }
-        public float Unk25 { get; set; }
-        public float Unk26 { get; set; }
-        public int Unk27 { get; set; }
-        public MetaHash Unk28 { get; set; }
-        public float Unk29 { get; set; }
-        public float Unk30 { get; set; }
-        public MetaHash Footsteps { get; set; }
-        public int Unk31 { get; set; }
-        public MetaHash Unk32 { get; set; }
+        public FlagsUint Flags { get; set; }
+        public MetaHash HardImpact { get; set; }
+        public MetaHash SolidImpact { get; set; }
+        public MetaHash SoftImpact { get; set; }
+        public MetaHash ScrapeSound { get; set; }
+        public MetaHash PedScrapeSound { get; set; }
+        public MetaHash BreakSound { get; set; }
+        public MetaHash DestroySound { get; set; }
+        public MetaHash SettleSound { get; set; }
+        public MetaHash BulletImpactSound { get; set; }
+        public MetaHash AutomaticBulletImpactSound { get; set; }
+        public MetaHash ShotgunBulletImpactSound { get; set; }
+        public MetaHash BigVehicleImpactSound { get; set; }
+        public MetaHash PedPunch { get; set; }
+        public MetaHash PedKick { get; set; }
+        public uint MediumIntensity { get; set; }
+        public uint HighIntensity { get; set; }
+        public byte Hardness { get; set; }
+        public byte padding00 { get; set; }
+        public short padding01 { get; set; }
+        public float MinImpulseMag { get; set; }
+        public float MaxImpulseMag { get; set; }
+        public byte ImpulseMagScalar { get; set; }
+        public byte padding02 { get; set; }
+        public short padding03 { get; set; }
+        public float MaxScrapeSpeed { get; set; }
+        public float MinScrapeSpeed { get; set; }
+        public float ScrapeImpactMag { get; set; }
+        public float MaxRollSpeed { get; set; }
+        public float MinRollSpeed { get; set; }
+        public float RollImpactMag { get; set; }
+        public byte BulletCollisionScaling { get; set; }
+        public byte padding04 { get; set; }
+        public short padding05 { get; set; }
+        public MetaHash FootstepCustomImpactSound { get; set; }
+        public float FootstepMaterialHardness { get; set; }
+        public float FootstepMaterialLoudness { get; set; }
+        public MetaHash FootstepSettings { get; set; }
+        public byte FootstepScaling { get; set; }
+        public byte ScuffstepScaling { get; set; }
+        public byte FootstepImpactScaling { get; set; }
+        public byte ScuffImpactScaling { get; set; }
+        public MetaHash SkiSettings { get; set; }
         public MetaHash AnimalFootstepSettings { get; set; }
-        public MetaHash AudioTrack2 { get; set; }
-        public MetaHash Unk33 { get; set; }
-        public MetaHash Unk34 { get; set; }
-        public MetaHash Unk35 { get; set; }
-        public MetaHash Unk36 { get; set; }
-        public MetaHash Unk37 { get; set; }
-        public MetaHash Unk38 { get; set; }
-        public MetaHash Unk39 { get; set; }
-        public MetaHash Unk40 { get; set; }
-        public MetaHash Unk41 { get; set; }
-        public MetaHash Unk42 { get; set; }
-        public MetaHash Unk43 { get; set; }
-        public MetaHash Unk44 { get; set; }
-        public MetaHash Unk45 { get; set; }
-        public MetaHash Unk46 { get; set; }
-        public MetaHash Unk47 { get; set; }
-        public MetaHash Unk48 { get; set; }
-        public MetaHash Unk49 { get; set; }
-        public MetaHash Unk50 { get; set; }
-        public MetaHash Unk51 { get; set; }
-        public MetaHash Unk52 { get; set; }
-        public MetaHash Unk53 { get; set; }
-        public MetaHash Unk54 { get; set; }
-        public float Unk55 { get; set; }
-        public MetaHash Unk56 { get; set; }
-        public MetaHash Unk57 { get; set; }
-        public int Unk58 { get; set; }
-        public int Unk59 { get; set; }
-        public float Unk60 { get; set; }
-        public int Unk61 { get; set; }
-        public int Unk62 { get; set; }
-        public MetaHash Unk63 { get; set; }
-        public MetaHash Unk64 { get; set; }
-        public MetaHash Unk65 { get; set; }
-        public int Unk66 { get; set; }
-        public MetaHash Unk67 { get; set; }
-        public MetaHash Unk68 { get; set; }
-        public MetaHash Unk69 { get; set; }
-        public MetaHash Unk70 { get; set; }
-        public MetaHash Unk71 { get; set; }
-        public int Unk72 { get; set; }
-        public MetaHash Unk73 { get; set; }
-        public MetaHash Unk74 { get; set; }
-        public MetaHash Unk75 { get; set; }
-        public MetaHash Unk76 { get; set; }
-        public float Unk77 { get; set; }
-        public MetaHash Unk78 { get; set; }//another CollisionMaterialSettings
-        public MetaHash Unk79 { get; set; }//self reference
-        public MetaHash Unk80 { get; set; }
-        public MetaHash Unk81 { get; set; }
-        public MetaHash Unk82 { get; set; }
-        public MetaHash Unk83 { get; set; }
-        public MetaHash Unk84 { get; set; }
-        public int Unk85 { get; set; }
-        public MetaHash Unk86 { get; set; }
-        public int Unk87 { get; set; }
-        public MetaHash Unk88 { get; set; }
-        public int Unk89 { get; set; }
+        public MetaHash WetMaterialReference { get; set; }
+        public MetaHash ImpactStartOffsetCurve { get; set; }
+        public MetaHash ImpactVolCurve { get; set; }
+        public MetaHash ScrapePitchCurve { get; set; }
+        public MetaHash ScrapeVolCurve { get; set; }
+        public MetaHash FastTyreRoll { get; set; }
+        public MetaHash DetailTyreRoll { get; set; }
+        public MetaHash MainSkid { get; set; }
+        public MetaHash SideSkid { get; set; }
+        public MetaHash MetalShellCasingSmall { get; set; }
+        public MetaHash MetalShellCasingMedium { get; set; }
+        public MetaHash MetalShellCasingLarge { get; set; }
+        public MetaHash MetalShellCasingSmallSlow { get; set; }
+        public MetaHash MetalShellCasingMediumSlow { get; set; }
+        public MetaHash MetalShellCasingLargeSlow { get; set; }
+        public MetaHash PlasticShellCasing { get; set; }
+        public MetaHash PlasticShellCasingSlow { get; set; }
+        public MetaHash RollSound { get; set; }
+        public MetaHash RainLoop { get; set; }
+        public MetaHash TyreBump { get; set; }
+        public MetaHash ShockwaveSound { get; set; }
+        public MetaHash RandomAmbient { get; set; }
+        public MetaHash ClimbSettings { get; set; }
+        public float Dirtiness { get; set; }
+        public MetaHash SurfaceSettle { get; set; }
+        public MetaHash RidgedSurfaceLoop { get; set; }
+        public uint CollisionCount { get; set; }
+        public uint CollisionCountThreshold { get; set; }
+        public float VolumeThreshold { get; set; }
+        public int MaterialID { get; set; }
+        public MetaHash SoundSetRef { get; set; }
+        public MetaHash DebrisLaunch { get; set; }
+        public MetaHash DebrisLand { get; set; }
+        public MetaHash OffRoadSound { get; set; }
+        public float Roughness { get; set; }
+        public MetaHash DebrisOnSlope { get; set; }
+        public MetaHash BicycleTyreRoll { get; set; }
+        public MetaHash OffRoadRumbleSound { get; set; }
+        public MetaHash StealthSweetener { get; set; }
+        public MetaHash Scuff { get; set; }
+        public byte MaterialType { get; set; }
+        public byte SurfacePriority { get; set; }
+        public short padding06 { get; set; }
+        public MetaHash WheelSpinLoop { get; set; }
+        public MetaHash BicycleTyreGritSound { get; set; }
+        public MetaHash PedSlideSound { get; set; }
+        public MetaHash PedRollSound { get; set; }
+        public float TimeInAirToTriggerBigLand { get; set; }
+        public MetaHash MeleeOverideMaterial { get; set; }//another CollisionMaterialSettings
+        public MetaHash SelfName { get; set; }//self reference
+        public MetaHash SlowMoHardImpact { get; set; }
+        public MetaHash SlowMoBulletImpactSound { get; set; }
+        public MetaHash SlowMoAutomaticBulletImpactSound { get; set; }
+        public MetaHash SlowMoShotgunBulletImpactSound { get; set; }
+        public MetaHash SlowMoBulletImpactPreSuck { get; set; }
+        public int SlowMoBulletImpactPreSuckTime { get; set; }
+        public MetaHash SlowMoAutomaticBulletImpactPreSuck { get; set; }
+        public int SlowMoAutomaticBulletImpactPreSuckTime { get; set; }
+        public MetaHash SlowMoShotgunBulletImpactPreSuck { get; set; }
+        public int SlowMoShotgunBulletImpactPreSuckTime { get; set; }
 
         public Dat151CollisionMaterialSettings(RelFile rel) : base(rel)
         {
@@ -7981,389 +7992,419 @@ namespace CodeWalker.GameFiles
         }
         public Dat151CollisionMaterialSettings(RelData d, BinaryReader br) : base(d, br)
         {
-            Unk00 = br.ReadUInt32();
-            Unk01 = br.ReadUInt32();
-            Unk02 = br.ReadUInt32();
-            Unk03 = br.ReadUInt32();
-            Unk04 = br.ReadUInt32();
-            Unk05 = br.ReadUInt32();
-            Unk06 = br.ReadUInt32();
-            Unk07 = br.ReadUInt32();
-            Unk08 = br.ReadUInt32();
-            Unk09 = br.ReadUInt32();
-            Unk10 = br.ReadUInt32();
-            Unk11 = br.ReadUInt32();
-            Unk12 = br.ReadUInt32();
-            Unk13 = br.ReadUInt32();
-            Unk14 = br.ReadUInt32();
-            Unk15 = br.ReadInt32();
-            Unk16 = br.ReadInt32();
-            Unk17 = br.ReadInt32();
-            Unk18 = br.ReadInt32();
-            Unk19 = br.ReadSingle();
-            Unk20 = br.ReadInt32();
-            Unk21 = br.ReadSingle();
-            Unk22 = br.ReadSingle();
-            Unk23 = br.ReadSingle();
-            Unk24 = br.ReadSingle();
-            Unk25 = br.ReadSingle();
-            Unk26 = br.ReadSingle();
-            Unk27 = br.ReadInt32();
-            Unk28 = br.ReadUInt32();
-            Unk29 = br.ReadSingle();
-            Unk30 = br.ReadSingle();
-            Footsteps = br.ReadUInt32();
-            Unk31 = br.ReadInt32();
-            Unk32 = br.ReadUInt32();
+            Flags = br.ReadUInt32();
+            HardImpact = br.ReadUInt32();
+            SolidImpact = br.ReadUInt32();
+            SoftImpact = br.ReadUInt32();
+            ScrapeSound = br.ReadUInt32();
+            PedScrapeSound = br.ReadUInt32();
+            BreakSound = br.ReadUInt32();
+            DestroySound = br.ReadUInt32();
+            SettleSound = br.ReadUInt32();
+            BulletImpactSound = br.ReadUInt32();
+            AutomaticBulletImpactSound = br.ReadUInt32();
+            ShotgunBulletImpactSound = br.ReadUInt32();
+            BigVehicleImpactSound = br.ReadUInt32();
+            PedPunch = br.ReadUInt32();
+            PedKick = br.ReadUInt32();
+            MediumIntensity = br.ReadUInt32();
+            HighIntensity = br.ReadUInt32();
+            Hardness = br.ReadByte();
+            padding00 = br.ReadByte();
+            padding01 = br.ReadInt16();
+            MinImpulseMag = br.ReadSingle();
+            MaxImpulseMag = br.ReadSingle();
+            ImpulseMagScalar = br.ReadByte();
+            padding02 = br.ReadByte();
+            padding03 = br.ReadInt16();
+            MaxScrapeSpeed = br.ReadSingle();
+            MinScrapeSpeed = br.ReadSingle();
+            ScrapeImpactMag = br.ReadSingle();
+            MaxRollSpeed = br.ReadSingle();
+            MinRollSpeed = br.ReadSingle();
+            RollImpactMag = br.ReadSingle();
+            BulletCollisionScaling = br.ReadByte();
+            padding04 = br.ReadByte();
+            padding05 = br.ReadInt16();
+            FootstepCustomImpactSound = br.ReadUInt32();
+            FootstepMaterialHardness = br.ReadSingle();
+            FootstepMaterialLoudness = br.ReadSingle();
+            FootstepSettings = br.ReadUInt32();
+            FootstepScaling = br.ReadByte();
+            ScuffstepScaling = br.ReadByte();
+            FootstepImpactScaling = br.ReadByte();
+            ScuffImpactScaling = br.ReadByte();
+            SkiSettings = br.ReadUInt32();
             AnimalFootstepSettings = br.ReadUInt32();
-            AudioTrack2 = br.ReadUInt32();
-            Unk33 = br.ReadUInt32();
-            Unk34 = br.ReadUInt32();
-            Unk35 = br.ReadUInt32();
-            Unk36 = br.ReadUInt32();
-            Unk37 = br.ReadUInt32();
-            Unk38 = br.ReadUInt32();
-            Unk39 = br.ReadUInt32();
-            Unk40 = br.ReadUInt32();
-            Unk41 = br.ReadUInt32();
-            Unk42 = br.ReadUInt32();
-            Unk43 = br.ReadUInt32();
-            Unk44 = br.ReadUInt32();
-            Unk45 = br.ReadUInt32();
-            Unk46 = br.ReadUInt32();
-            Unk47 = br.ReadUInt32();
-            Unk48 = br.ReadUInt32();
-            Unk49 = br.ReadUInt32();
-            Unk50 = br.ReadUInt32();
-            Unk51 = br.ReadUInt32();
-            Unk52 = br.ReadUInt32();
-            Unk53 = br.ReadUInt32();
-            Unk54 = br.ReadUInt32();
-            Unk55 = br.ReadSingle();
-            Unk56 = br.ReadUInt32();
-            Unk57 = br.ReadUInt32();
-            Unk58 = br.ReadInt32();
-            Unk59 = br.ReadInt32();
-            Unk60 = br.ReadSingle();
-            Unk61 = br.ReadInt32();
-            Unk62 = br.ReadInt32();
-            Unk63 = br.ReadUInt32();
-            Unk64 = br.ReadUInt32();
-            Unk65 = br.ReadUInt32();
-            Unk66 = br.ReadInt32();
-            Unk67 = br.ReadUInt32();
-            Unk68 = br.ReadUInt32();
-            Unk69 = br.ReadUInt32();
-            Unk70 = br.ReadUInt32();
-            Unk71 = br.ReadUInt32();
-            Unk72 = br.ReadInt32();
-            Unk73 = br.ReadUInt32();
-            Unk74 = br.ReadUInt32();
-            Unk75 = br.ReadUInt32();
-            Unk76 = br.ReadUInt32();
-            Unk77 = br.ReadSingle();
-            Unk78 = br.ReadUInt32();
-            Unk79 = br.ReadUInt32();
-            Unk80 = br.ReadUInt32();
-            Unk81 = br.ReadUInt32();
-            Unk82 = br.ReadUInt32();
-            Unk83 = br.ReadUInt32();
-            Unk84 = br.ReadUInt32();
-            Unk85 = br.ReadInt32();
-            Unk86 = br.ReadUInt32();
-            Unk87 = br.ReadInt32();
-            Unk88 = br.ReadUInt32();
-            Unk89 = br.ReadInt32();
+            WetMaterialReference = br.ReadUInt32();
+            ImpactStartOffsetCurve = br.ReadUInt32();
+            ImpactVolCurve = br.ReadUInt32();
+            ScrapePitchCurve = br.ReadUInt32();
+            ScrapeVolCurve = br.ReadUInt32();
+            FastTyreRoll = br.ReadUInt32();
+            DetailTyreRoll = br.ReadUInt32();
+            MainSkid = br.ReadUInt32();
+            SideSkid = br.ReadUInt32();
+            MetalShellCasingSmall = br.ReadUInt32();
+            MetalShellCasingMedium = br.ReadUInt32();
+            MetalShellCasingLarge = br.ReadUInt32();
+            MetalShellCasingSmallSlow = br.ReadUInt32();
+            MetalShellCasingMediumSlow = br.ReadUInt32();
+            MetalShellCasingLargeSlow = br.ReadUInt32();
+            PlasticShellCasing = br.ReadUInt32();
+            PlasticShellCasingSlow = br.ReadUInt32();
+            RollSound = br.ReadUInt32();
+            RainLoop = br.ReadUInt32();
+            TyreBump = br.ReadUInt32();
+            ShockwaveSound = br.ReadUInt32();
+            RandomAmbient = br.ReadUInt32();
+            ClimbSettings = br.ReadUInt32();
+            Dirtiness = br.ReadSingle();
+            SurfaceSettle = br.ReadUInt32();
+            RidgedSurfaceLoop = br.ReadUInt32();
+            CollisionCount = br.ReadUInt32();
+            CollisionCountThreshold = br.ReadUInt32();
+            VolumeThreshold = br.ReadSingle();
+            MaterialID = br.ReadInt32();
+            SoundSetRef = br.ReadUInt32();
+            DebrisLaunch = br.ReadUInt32();
+            DebrisLand = br.ReadUInt32();
+            OffRoadSound = br.ReadUInt32();
+            Roughness = br.ReadSingle();
+            DebrisOnSlope = br.ReadUInt32();
+            BicycleTyreRoll = br.ReadUInt32();
+            OffRoadRumbleSound = br.ReadUInt32();
+            StealthSweetener = br.ReadUInt32();
+            Scuff = br.ReadUInt32();
+            MaterialType = br.ReadByte();
+            SurfacePriority = br.ReadByte();
+            padding06 = br.ReadInt16();
+            WheelSpinLoop = br.ReadUInt32();
+            BicycleTyreGritSound = br.ReadUInt32();
+            PedSlideSound = br.ReadUInt32();
+            PedRollSound = br.ReadUInt32();
+            TimeInAirToTriggerBigLand = br.ReadSingle();
+            MeleeOverideMaterial = br.ReadUInt32();
+            SelfName = br.ReadUInt32();
+            SlowMoHardImpact = br.ReadUInt32();
+            SlowMoBulletImpactSound = br.ReadUInt32();
+            SlowMoAutomaticBulletImpactSound = br.ReadUInt32();
+            SlowMoShotgunBulletImpactSound = br.ReadUInt32();
+            SlowMoBulletImpactPreSuck = br.ReadUInt32();
+            SlowMoBulletImpactPreSuckTime = br.ReadInt32();
+            SlowMoAutomaticBulletImpactPreSuck = br.ReadUInt32();
+            SlowMoAutomaticBulletImpactPreSuckTime = br.ReadInt32();
+            SlowMoShotgunBulletImpactPreSuck = br.ReadUInt32();
+            SlowMoShotgunBulletImpactPreSuckTime = br.ReadInt32();
         }
         public override void Write(BinaryWriter bw)
         {
             WriteTypeAndOffset(bw);
 
-            bw.Write(Unk00);
-            bw.Write(Unk01);
-            bw.Write(Unk02);
-            bw.Write(Unk03);
-            bw.Write(Unk04);
-            bw.Write(Unk05);
-            bw.Write(Unk06);
-            bw.Write(Unk07);
-            bw.Write(Unk08);
-            bw.Write(Unk09);
-            bw.Write(Unk10);
-            bw.Write(Unk11);
-            bw.Write(Unk12);
-            bw.Write(Unk13);
-            bw.Write(Unk14);
-            bw.Write(Unk15);
-            bw.Write(Unk16);
-            bw.Write(Unk17);
-            bw.Write(Unk18);
-            bw.Write(Unk19);
-            bw.Write(Unk20);
-            bw.Write(Unk21);
-            bw.Write(Unk22);
-            bw.Write(Unk23);
-            bw.Write(Unk24);
-            bw.Write(Unk25);
-            bw.Write(Unk26);
-            bw.Write(Unk27);
-            bw.Write(Unk28);
-            bw.Write(Unk29);
-            bw.Write(Unk30);
-            bw.Write(Footsteps);
-            bw.Write(Unk31);
-            bw.Write(Unk32);
+            bw.Write(Flags);
+            bw.Write(HardImpact);
+            bw.Write(SolidImpact);
+            bw.Write(SoftImpact);
+            bw.Write(ScrapeSound);
+            bw.Write(PedScrapeSound);
+            bw.Write(BreakSound);
+            bw.Write(DestroySound);
+            bw.Write(SettleSound);
+            bw.Write(BulletImpactSound);
+            bw.Write(AutomaticBulletImpactSound);
+            bw.Write(ShotgunBulletImpactSound);
+            bw.Write(BigVehicleImpactSound);
+            bw.Write(PedPunch);
+            bw.Write(PedKick);
+            bw.Write(MediumIntensity);
+            bw.Write(HighIntensity);
+            bw.Write(Hardness);
+            bw.Write(padding00);
+            bw.Write(padding01);
+            bw.Write(MinImpulseMag);
+            bw.Write(MaxImpulseMag);
+            bw.Write(ImpulseMagScalar);
+            bw.Write(padding02);
+            bw.Write(padding03);
+            bw.Write(MaxScrapeSpeed);
+            bw.Write(MinScrapeSpeed);
+            bw.Write(ScrapeImpactMag);
+            bw.Write(MaxRollSpeed);
+            bw.Write(MinRollSpeed);
+            bw.Write(RollImpactMag);
+            bw.Write(BulletCollisionScaling);
+            bw.Write(padding04);
+            bw.Write(padding05);
+            bw.Write(FootstepCustomImpactSound);
+            bw.Write(FootstepMaterialHardness);
+            bw.Write(FootstepMaterialLoudness);
+            bw.Write(FootstepSettings);
+            bw.Write(FootstepScaling);
+            bw.Write(ScuffstepScaling);
+            bw.Write(FootstepImpactScaling);
+            bw.Write(ScuffImpactScaling);
+            bw.Write(SkiSettings);
             bw.Write(AnimalFootstepSettings);
-            bw.Write(AudioTrack2);
-            bw.Write(Unk33);
-            bw.Write(Unk34);
-            bw.Write(Unk35);
-            bw.Write(Unk36);
-            bw.Write(Unk37);
-            bw.Write(Unk38);
-            bw.Write(Unk39);
-            bw.Write(Unk40);
-            bw.Write(Unk41);
-            bw.Write(Unk42);
-            bw.Write(Unk43);
-            bw.Write(Unk44);
-            bw.Write(Unk45);
-            bw.Write(Unk46);
-            bw.Write(Unk47);
-            bw.Write(Unk48);
-            bw.Write(Unk49);
-            bw.Write(Unk50);
-            bw.Write(Unk51);
-            bw.Write(Unk52);
-            bw.Write(Unk53);
-            bw.Write(Unk54);
-            bw.Write(Unk55);
-            bw.Write(Unk56);
-            bw.Write(Unk57);
-            bw.Write(Unk58);
-            bw.Write(Unk59);
-            bw.Write(Unk60);
-            bw.Write(Unk61);
-            bw.Write(Unk62);
-            bw.Write(Unk63);
-            bw.Write(Unk64);
-            bw.Write(Unk65);
-            bw.Write(Unk66);
-            bw.Write(Unk67);
-            bw.Write(Unk68);
-            bw.Write(Unk69);
-            bw.Write(Unk70);
-            bw.Write(Unk71);
-            bw.Write(Unk72);
-            bw.Write(Unk73);
-            bw.Write(Unk74);
-            bw.Write(Unk75);
-            bw.Write(Unk76);
-            bw.Write(Unk77);
-            bw.Write(Unk78);
-            bw.Write(Unk79);
-            bw.Write(Unk80);
-            bw.Write(Unk81);
-            bw.Write(Unk82);
-            bw.Write(Unk83);
-            bw.Write(Unk84);
-            bw.Write(Unk85);
-            bw.Write(Unk86);
-            bw.Write(Unk87);
-            bw.Write(Unk88);
-            bw.Write(Unk89);
+            bw.Write(WetMaterialReference);
+            bw.Write(ImpactStartOffsetCurve);
+            bw.Write(ImpactVolCurve);
+            bw.Write(ScrapePitchCurve);
+            bw.Write(ScrapeVolCurve);
+            bw.Write(FastTyreRoll);
+            bw.Write(DetailTyreRoll);
+            bw.Write(MainSkid);
+            bw.Write(SideSkid);
+            bw.Write(MetalShellCasingSmall);
+            bw.Write(MetalShellCasingMedium);
+            bw.Write(MetalShellCasingLarge);
+            bw.Write(MetalShellCasingSmallSlow);
+            bw.Write(MetalShellCasingMediumSlow);
+            bw.Write(MetalShellCasingLargeSlow);
+            bw.Write(PlasticShellCasing);
+            bw.Write(PlasticShellCasingSlow);
+            bw.Write(RollSound);
+            bw.Write(RainLoop);
+            bw.Write(TyreBump);
+            bw.Write(ShockwaveSound);
+            bw.Write(RandomAmbient);
+            bw.Write(ClimbSettings);
+            bw.Write(Dirtiness);
+            bw.Write(SurfaceSettle);
+            bw.Write(RidgedSurfaceLoop);
+            bw.Write(CollisionCount);
+            bw.Write(CollisionCountThreshold);
+            bw.Write(VolumeThreshold);
+            bw.Write(MaterialID);
+            bw.Write(SoundSetRef);
+            bw.Write(DebrisLaunch);
+            bw.Write(DebrisLand);
+            bw.Write(OffRoadSound);
+            bw.Write(Roughness);
+            bw.Write(DebrisOnSlope);
+            bw.Write(BicycleTyreRoll);
+            bw.Write(OffRoadRumbleSound);
+            bw.Write(StealthSweetener);
+            bw.Write(Scuff);
+            bw.Write(MaterialType);
+            bw.Write(SurfacePriority);
+            bw.Write(padding06);
+            bw.Write(WheelSpinLoop);
+            bw.Write(BicycleTyreGritSound);
+            bw.Write(PedSlideSound);
+            bw.Write(PedRollSound);
+            bw.Write(TimeInAirToTriggerBigLand);
+            bw.Write(MeleeOverideMaterial);
+            bw.Write(SelfName);
+            bw.Write(SlowMoHardImpact);
+            bw.Write(SlowMoBulletImpactSound);
+            bw.Write(SlowMoAutomaticBulletImpactSound);
+            bw.Write(SlowMoShotgunBulletImpactSound);
+            bw.Write(SlowMoBulletImpactPreSuck);
+            bw.Write(SlowMoBulletImpactPreSuckTime);
+            bw.Write(SlowMoAutomaticBulletImpactPreSuck);
+            bw.Write(SlowMoAutomaticBulletImpactPreSuckTime);
+            bw.Write(SlowMoShotgunBulletImpactPreSuck);
+            bw.Write(SlowMoShotgunBulletImpactPreSuckTime);
         }
         public override void WriteXml(StringBuilder sb, int indent)
         {
-            RelXml.ValueTag(sb, indent, "Unk00", "0x" + Unk00.Hex);
-            RelXml.StringTag(sb, indent, "Unk01", RelXml.HashString(Unk01));
-            RelXml.StringTag(sb, indent, "Unk02", RelXml.HashString(Unk02));
-            RelXml.StringTag(sb, indent, "Unk03", RelXml.HashString(Unk03));
-            RelXml.StringTag(sb, indent, "Unk04", RelXml.HashString(Unk04));
-            RelXml.StringTag(sb, indent, "Unk05", RelXml.HashString(Unk05));
-            RelXml.StringTag(sb, indent, "Unk06", RelXml.HashString(Unk06));
-            RelXml.StringTag(sb, indent, "Unk07", RelXml.HashString(Unk07));
-            RelXml.StringTag(sb, indent, "Unk08", RelXml.HashString(Unk08));
-            RelXml.StringTag(sb, indent, "Unk09", RelXml.HashString(Unk09));
-            RelXml.StringTag(sb, indent, "Unk10", RelXml.HashString(Unk10));
-            RelXml.StringTag(sb, indent, "Unk11", RelXml.HashString(Unk11));
-            RelXml.StringTag(sb, indent, "Unk12", RelXml.HashString(Unk12));
-            RelXml.StringTag(sb, indent, "Unk13", RelXml.HashString(Unk13));
-            RelXml.StringTag(sb, indent, "Unk14", RelXml.HashString(Unk14));
-            RelXml.ValueTag(sb, indent, "Unk15", Unk15.ToString());
-            RelXml.ValueTag(sb, indent, "Unk16", Unk16.ToString());
-            RelXml.ValueTag(sb, indent, "Unk17", Unk17.ToString());
-            RelXml.ValueTag(sb, indent, "Unk18", Unk18.ToString());
-            RelXml.ValueTag(sb, indent, "Unk19", FloatUtil.ToString(Unk19));
-            RelXml.ValueTag(sb, indent, "Unk20", Unk20.ToString());
-            RelXml.ValueTag(sb, indent, "Unk21", FloatUtil.ToString(Unk21));
-            RelXml.ValueTag(sb, indent, "Unk22", FloatUtil.ToString(Unk22));
-            RelXml.ValueTag(sb, indent, "Unk23", FloatUtil.ToString(Unk23));
-            RelXml.ValueTag(sb, indent, "Unk24", FloatUtil.ToString(Unk24));
-            RelXml.ValueTag(sb, indent, "Unk25", FloatUtil.ToString(Unk25));
-            RelXml.ValueTag(sb, indent, "Unk26", FloatUtil.ToString(Unk26));
-            RelXml.ValueTag(sb, indent, "Unk27", Unk27.ToString());
-            RelXml.StringTag(sb, indent, "Unk28", RelXml.HashString(Unk28));
-            RelXml.ValueTag(sb, indent, "Unk29", FloatUtil.ToString(Unk29));
-            RelXml.ValueTag(sb, indent, "Unk30", FloatUtil.ToString(Unk30));
-            RelXml.StringTag(sb, indent, "Footsteps", RelXml.HashString(Footsteps));
-            RelXml.ValueTag(sb, indent, "Unk31", Unk31.ToString());
-            RelXml.StringTag(sb, indent, "Unk32", RelXml.HashString(Unk32));
+            RelXml.ValueTag(sb, indent, "Flags", "0x" + Flags.Hex);
+            RelXml.StringTag(sb, indent, "HardImpact", RelXml.HashString(HardImpact));
+            RelXml.StringTag(sb, indent, "SolidImpact", RelXml.HashString(SolidImpact));
+            RelXml.StringTag(sb, indent, "SoftImpact", RelXml.HashString(SoftImpact));
+            RelXml.StringTag(sb, indent, "ScrapeSound", RelXml.HashString(ScrapeSound));
+            RelXml.StringTag(sb, indent, "PedScrapeSound", RelXml.HashString(PedScrapeSound));
+            RelXml.StringTag(sb, indent, "BreakSound", RelXml.HashString(BreakSound));
+            RelXml.StringTag(sb, indent, "DestroySound", RelXml.HashString(DestroySound));
+            RelXml.StringTag(sb, indent, "SettleSound", RelXml.HashString(SettleSound));
+            RelXml.StringTag(sb, indent, "BulletImpactSound", RelXml.HashString(BulletImpactSound));
+            RelXml.StringTag(sb, indent, "AutomaticBulletImpactSound", RelXml.HashString(AutomaticBulletImpactSound));
+            RelXml.StringTag(sb, indent, "ShotgunBulletImpactSound", RelXml.HashString(ShotgunBulletImpactSound));
+            RelXml.StringTag(sb, indent, "BigVehicleImpactSound", RelXml.HashString(BigVehicleImpactSound));
+            RelXml.StringTag(sb, indent, "PedPunch", RelXml.HashString(PedPunch));
+            RelXml.StringTag(sb, indent, "PedKick", RelXml.HashString(PedKick));
+            RelXml.ValueTag(sb, indent, "MediumIntensity", MediumIntensity.ToString());
+            RelXml.ValueTag(sb, indent, "HighIntensity", HighIntensity.ToString());
+            RelXml.ValueTag(sb, indent, "Hardness", Hardness.ToString());
+            RelXml.ValueTag(sb, indent, "MinImpulseMag", FloatUtil.ToString(MinImpulseMag));
+            RelXml.ValueTag(sb, indent, "MaxImpulseMag", FloatUtil.ToString(MaxImpulseMag));
+            RelXml.ValueTag(sb, indent, "ImpulseMagScalar", ImpulseMagScalar.ToString());
+            RelXml.ValueTag(sb, indent, "MaxScrapeSpeed", FloatUtil.ToString(MaxScrapeSpeed));
+            RelXml.ValueTag(sb, indent, "MinScrapeSpeed", FloatUtil.ToString(MinScrapeSpeed));
+            RelXml.ValueTag(sb, indent, "ScrapeImpactMag", FloatUtil.ToString(ScrapeImpactMag));
+            RelXml.ValueTag(sb, indent, "MaxRollSpeed", FloatUtil.ToString(MaxRollSpeed));
+            RelXml.ValueTag(sb, indent, "MinRollSpeed", FloatUtil.ToString(MinRollSpeed));
+            RelXml.ValueTag(sb, indent, "RollImpactMag", FloatUtil.ToString(RollImpactMag));
+            RelXml.ValueTag(sb, indent, "BulletCollisionScaling", BulletCollisionScaling.ToString());
+            RelXml.StringTag(sb, indent, "FootstepCustomImpactSound", RelXml.HashString(FootstepCustomImpactSound));
+            RelXml.ValueTag(sb, indent, "FootstepMaterialHardness", FloatUtil.ToString(FootstepMaterialHardness));
+            RelXml.ValueTag(sb, indent, "FootstepMaterialLoudness", FloatUtil.ToString(FootstepMaterialLoudness));
+            RelXml.StringTag(sb, indent, "FootstepSettings", RelXml.HashString(FootstepSettings));
+            RelXml.ValueTag(sb, indent, "FootstepScaling", FootstepScaling.ToString());
+            RelXml.ValueTag(sb, indent, "ScuffstepScaling", ScuffstepScaling.ToString());
+            RelXml.ValueTag(sb, indent, "FootstepImpactScaling", FootstepImpactScaling.ToString());
+            RelXml.ValueTag(sb, indent, "ScuffImpactScaling", ScuffImpactScaling.ToString());
+            RelXml.StringTag(sb, indent, "SkiSettings", RelXml.HashString(SkiSettings));
             RelXml.StringTag(sb, indent, "AnimalFootstepSettings", RelXml.HashString(AnimalFootstepSettings));
-            RelXml.StringTag(sb, indent, "AudioTrack2", RelXml.HashString(AudioTrack2));
-            RelXml.StringTag(sb, indent, "Unk33", RelXml.HashString(Unk33));
-            RelXml.StringTag(sb, indent, "Unk34", RelXml.HashString(Unk34));
-            RelXml.StringTag(sb, indent, "Unk35", RelXml.HashString(Unk35));
-            RelXml.StringTag(sb, indent, "Unk36", RelXml.HashString(Unk36));
-            RelXml.StringTag(sb, indent, "Unk37", RelXml.HashString(Unk37));
-            RelXml.StringTag(sb, indent, "Unk38", RelXml.HashString(Unk38));
-            RelXml.StringTag(sb, indent, "Unk39", RelXml.HashString(Unk39));
-            RelXml.StringTag(sb, indent, "Unk40", RelXml.HashString(Unk40));
-            RelXml.StringTag(sb, indent, "Unk41", RelXml.HashString(Unk41));
-            RelXml.StringTag(sb, indent, "Unk42", RelXml.HashString(Unk42));
-            RelXml.StringTag(sb, indent, "Unk43", RelXml.HashString(Unk43));
-            RelXml.StringTag(sb, indent, "Unk44", RelXml.HashString(Unk44));
-            RelXml.StringTag(sb, indent, "Unk45", RelXml.HashString(Unk45));
-            RelXml.StringTag(sb, indent, "Unk46", RelXml.HashString(Unk46));
-            RelXml.StringTag(sb, indent, "Unk47", RelXml.HashString(Unk47));
-            RelXml.StringTag(sb, indent, "Unk48", RelXml.HashString(Unk48));
-            RelXml.StringTag(sb, indent, "Unk49", RelXml.HashString(Unk49));
-            RelXml.StringTag(sb, indent, "Unk50", RelXml.HashString(Unk50));
-            RelXml.StringTag(sb, indent, "Unk51", RelXml.HashString(Unk51));
-            RelXml.StringTag(sb, indent, "Unk52", RelXml.HashString(Unk52));
-            RelXml.StringTag(sb, indent, "Unk53", RelXml.HashString(Unk53));
-            RelXml.StringTag(sb, indent, "Unk54", RelXml.HashString(Unk54));
-            RelXml.ValueTag(sb, indent, "Unk55", FloatUtil.ToString(Unk55));
-            RelXml.StringTag(sb, indent, "Unk56", RelXml.HashString(Unk56));
-            RelXml.StringTag(sb, indent, "Unk57", RelXml.HashString(Unk57));
-            RelXml.ValueTag(sb, indent, "Unk58", Unk58.ToString());
-            RelXml.ValueTag(sb, indent, "Unk59", Unk59.ToString());
-            RelXml.ValueTag(sb, indent, "Unk60", FloatUtil.ToString(Unk60));
-            RelXml.ValueTag(sb, indent, "Unk61", Unk61.ToString());
-            RelXml.ValueTag(sb, indent, "Unk62", Unk62.ToString());
-            RelXml.StringTag(sb, indent, "Unk63", RelXml.HashString(Unk63));
-            RelXml.StringTag(sb, indent, "Unk64", RelXml.HashString(Unk64));
-            RelXml.StringTag(sb, indent, "Unk65", RelXml.HashString(Unk65));
-            RelXml.ValueTag(sb, indent, "Unk66", Unk66.ToString());
-            RelXml.StringTag(sb, indent, "Unk67", RelXml.HashString(Unk67));
-            RelXml.StringTag(sb, indent, "Unk68", RelXml.HashString(Unk68));
-            RelXml.StringTag(sb, indent, "Unk69", RelXml.HashString(Unk69));
-            RelXml.StringTag(sb, indent, "Unk70", RelXml.HashString(Unk70));
-            RelXml.StringTag(sb, indent, "Unk71", RelXml.HashString(Unk71));
-            RelXml.ValueTag(sb, indent, "Unk72", Unk72.ToString());
-            RelXml.StringTag(sb, indent, "Unk73", RelXml.HashString(Unk73));
-            RelXml.StringTag(sb, indent, "Unk74", RelXml.HashString(Unk74));
-            RelXml.StringTag(sb, indent, "Unk75", RelXml.HashString(Unk75));
-            RelXml.StringTag(sb, indent, "Unk76", RelXml.HashString(Unk76));
-            RelXml.ValueTag(sb, indent, "Unk77", FloatUtil.ToString(Unk77));
-            RelXml.StringTag(sb, indent, "Unk78", RelXml.HashString(Unk78));
-            RelXml.StringTag(sb, indent, "Unk79", RelXml.HashString(Unk79));
-            RelXml.StringTag(sb, indent, "Unk80", RelXml.HashString(Unk80));
-            RelXml.StringTag(sb, indent, "Unk81", RelXml.HashString(Unk81));
-            RelXml.StringTag(sb, indent, "Unk82", RelXml.HashString(Unk82));
-            RelXml.StringTag(sb, indent, "Unk83", RelXml.HashString(Unk83));
-            RelXml.StringTag(sb, indent, "Unk84", RelXml.HashString(Unk84));
-            RelXml.ValueTag(sb, indent, "Unk85", Unk85.ToString());
-            RelXml.StringTag(sb, indent, "Unk86", RelXml.HashString(Unk86));
-            RelXml.ValueTag(sb, indent, "Unk87", Unk87.ToString());
-            RelXml.StringTag(sb, indent, "Unk88", RelXml.HashString(Unk88));
-            RelXml.ValueTag(sb, indent, "Unk89", Unk89.ToString());
+            RelXml.StringTag(sb, indent, "WetMaterialReference", RelXml.HashString(WetMaterialReference));
+            RelXml.StringTag(sb, indent, "ImpactStartOffsetCurve", RelXml.HashString(ImpactStartOffsetCurve));
+            RelXml.StringTag(sb, indent, "ImpactVolCurve", RelXml.HashString(ImpactVolCurve));
+            RelXml.StringTag(sb, indent, "ScrapePitchCurve", RelXml.HashString(ScrapePitchCurve));
+            RelXml.StringTag(sb, indent, "ScrapeVolCurve", RelXml.HashString(ScrapeVolCurve));
+            RelXml.StringTag(sb, indent, "FastTyreRoll", RelXml.HashString(FastTyreRoll));
+            RelXml.StringTag(sb, indent, "DetailTyreRoll", RelXml.HashString(DetailTyreRoll));
+            RelXml.StringTag(sb, indent, "MainSkid", RelXml.HashString(MainSkid));
+            RelXml.StringTag(sb, indent, "SideSkid", RelXml.HashString(SideSkid));
+            RelXml.StringTag(sb, indent, "MetalShellCasingSmall", RelXml.HashString(MetalShellCasingSmall));
+            RelXml.StringTag(sb, indent, "MetalShellCasingMedium", RelXml.HashString(MetalShellCasingMedium));
+            RelXml.StringTag(sb, indent, "MetalShellCasingLarge", RelXml.HashString(MetalShellCasingLarge));
+            RelXml.StringTag(sb, indent, "MetalShellCasingSmallSlow", RelXml.HashString(MetalShellCasingSmallSlow));
+            RelXml.StringTag(sb, indent, "MetalShellCasingMediumSlow", RelXml.HashString(MetalShellCasingMediumSlow));
+            RelXml.StringTag(sb, indent, "MetalShellCasingLargeSlow", RelXml.HashString(MetalShellCasingLargeSlow));
+            RelXml.StringTag(sb, indent, "PlasticShellCasing", RelXml.HashString(PlasticShellCasing));
+            RelXml.StringTag(sb, indent, "PlasticShellCasingSlow", RelXml.HashString(PlasticShellCasingSlow));
+            RelXml.StringTag(sb, indent, "RollSound", RelXml.HashString(RollSound));
+            RelXml.StringTag(sb, indent, "RainLoop", RelXml.HashString(RainLoop));
+            RelXml.StringTag(sb, indent, "TyreBump", RelXml.HashString(TyreBump));
+            RelXml.StringTag(sb, indent, "ShockwaveSound", RelXml.HashString(ShockwaveSound));
+            RelXml.StringTag(sb, indent, "RandomAmbient", RelXml.HashString(RandomAmbient));
+            RelXml.StringTag(sb, indent, "ClimbSettings", RelXml.HashString(ClimbSettings));
+            RelXml.ValueTag(sb, indent, "Dirtiness", FloatUtil.ToString(Dirtiness));
+            RelXml.StringTag(sb, indent, "SurfaceSettle", RelXml.HashString(SurfaceSettle));
+            RelXml.StringTag(sb, indent, "RidgedSurfaceLoop", RelXml.HashString(RidgedSurfaceLoop));
+            RelXml.ValueTag(sb, indent, "CollisionCount", CollisionCount.ToString());
+            RelXml.ValueTag(sb, indent, "CollisionCountThreshold", CollisionCountThreshold.ToString());
+            RelXml.ValueTag(sb, indent, "VolumeThreshold", FloatUtil.ToString(VolumeThreshold));
+            RelXml.ValueTag(sb, indent, "MaterialID", MaterialID.ToString());
+            RelXml.ValueTag(sb, indent, "SoundSetRef", SoundSetRef.ToString());
+            RelXml.StringTag(sb, indent, "DebrisLaunch", RelXml.HashString(DebrisLaunch));
+            RelXml.StringTag(sb, indent, "DebrisLand", RelXml.HashString(DebrisLand));
+            RelXml.StringTag(sb, indent, "OffRoadSound", RelXml.HashString(OffRoadSound));
+            RelXml.ValueTag(sb, indent, "Roughness", FloatUtil.ToString(Roughness));
+            RelXml.StringTag(sb, indent, "DebrisOnSlope", RelXml.HashString(DebrisOnSlope));
+            RelXml.StringTag(sb, indent, "BicycleTyreRoll", RelXml.HashString(BicycleTyreRoll));
+            RelXml.StringTag(sb, indent, "OffRoadRumbleSound", RelXml.HashString(OffRoadRumbleSound));
+            RelXml.StringTag(sb, indent, "StealthSweetener", RelXml.HashString(StealthSweetener));
+            RelXml.StringTag(sb, indent, "Scuff", RelXml.HashString(Scuff));
+            RelXml.ValueTag(sb, indent, "MaterialType", MaterialType.ToString());
+            RelXml.StringTag(sb, indent, "SurfacePriority", SurfacePriority.ToString());
+            RelXml.StringTag(sb, indent, "WheelSpinLoop", RelXml.HashString(WheelSpinLoop));
+            RelXml.StringTag(sb, indent, "BicycleTyreGritSound", RelXml.HashString(BicycleTyreGritSound));
+            RelXml.StringTag(sb, indent, "PedSlideSound", RelXml.HashString(PedSlideSound));
+            RelXml.StringTag(sb, indent, "PedRollSound", RelXml.HashString(PedRollSound));
+            RelXml.ValueTag(sb, indent, "TimeInAirToTriggerBigLand", FloatUtil.ToString(TimeInAirToTriggerBigLand));
+            RelXml.StringTag(sb, indent, "MeleeOverideMaterial", RelXml.HashString(MeleeOverideMaterial));
+            RelXml.StringTag(sb, indent, "SelfName", RelXml.HashString(SelfName));
+            RelXml.StringTag(sb, indent, "SlowMoHardImpact", RelXml.HashString(SlowMoHardImpact));
+            RelXml.StringTag(sb, indent, "SlowMoBulletImpactSound", RelXml.HashString(SlowMoBulletImpactSound));
+            RelXml.StringTag(sb, indent, "SlowMoAutomaticBulletImpactSound", RelXml.HashString(SlowMoAutomaticBulletImpactSound));
+            RelXml.StringTag(sb, indent, "SlowMoShotgunBulletImpactSound", RelXml.HashString(SlowMoShotgunBulletImpactSound));
+            RelXml.StringTag(sb, indent, "SlowMoBulletImpactPreSuck", RelXml.HashString(SlowMoBulletImpactPreSuck));
+            RelXml.ValueTag(sb, indent, "SlowMoBulletImpactPreSuckTime", SlowMoBulletImpactPreSuckTime.ToString());
+            RelXml.StringTag(sb, indent, "SlowMoAutomaticBulletImpactPreSuck", RelXml.HashString(SlowMoAutomaticBulletImpactPreSuck));
+            RelXml.ValueTag(sb, indent, "SlowMoAutomaticBulletImpactPreSuckTime", SlowMoAutomaticBulletImpactPreSuckTime.ToString());
+            RelXml.StringTag(sb, indent, "SlowMoShotgunBulletImpactPreSuck", RelXml.HashString(SlowMoShotgunBulletImpactPreSuck));
+            RelXml.ValueTag(sb, indent, "SlowMoShotgunBulletImpactPreSuckTime", SlowMoShotgunBulletImpactPreSuckTime.ToString());
         }
         public override void ReadXml(XmlNode node)
         {
-            Unk00 = Xml.GetChildUIntAttribute(node, "Unk00", "value");
-            Unk01 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk01"));
-            Unk02 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk02"));
-            Unk03 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk03"));
-            Unk04 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk04"));
-            Unk05 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk05"));
-            Unk06 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk06"));
-            Unk07 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk07"));
-            Unk08 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk08"));
-            Unk09 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk09"));
-            Unk10 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk10"));
-            Unk11 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk11"));
-            Unk12 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk12"));
-            Unk13 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk13"));
-            Unk14 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk14"));
-            Unk15 = Xml.GetChildIntAttribute(node, "Unk15", "value");
-            Unk16 = Xml.GetChildIntAttribute(node, "Unk16", "value");
-            Unk17 = Xml.GetChildIntAttribute(node, "Unk17", "value");
-            Unk18 = Xml.GetChildIntAttribute(node, "Unk18", "value");
-            Unk19 = Xml.GetChildFloatAttribute(node, "Unk19", "value");
-            Unk20 = Xml.GetChildIntAttribute(node, "Unk20", "value");
-            Unk21 = Xml.GetChildFloatAttribute(node, "Unk21", "value");
-            Unk22 = Xml.GetChildFloatAttribute(node, "Unk22", "value");
-            Unk23 = Xml.GetChildFloatAttribute(node, "Unk23", "value");
-            Unk24 = Xml.GetChildFloatAttribute(node, "Unk24", "value");
-            Unk25 = Xml.GetChildFloatAttribute(node, "Unk25", "value");
-            Unk26 = Xml.GetChildFloatAttribute(node, "Unk26", "value");
-            Unk27 = Xml.GetChildIntAttribute(node, "Unk27", "value");
-            Unk28 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk28"));
-            Unk29 = Xml.GetChildFloatAttribute(node, "Unk29", "value");
-            Unk30 = Xml.GetChildFloatAttribute(node, "Unk30", "value");
-            Footsteps = XmlRel.GetHash(Xml.GetChildInnerText(node, "Footsteps"));
-            Unk31 = Xml.GetChildIntAttribute(node, "Unk31", "value");
-            Unk32 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk32"));
+            Flags = Xml.GetChildUIntAttribute(node, "Flags", "value");
+            HardImpact = XmlRel.GetHash(Xml.GetChildInnerText(node, "HardImpact"));
+            SolidImpact = XmlRel.GetHash(Xml.GetChildInnerText(node, "SolidImpact"));
+            SoftImpact = XmlRel.GetHash(Xml.GetChildInnerText(node, "SoftImpact"));
+            ScrapeSound = XmlRel.GetHash(Xml.GetChildInnerText(node, "ScrapeSound"));
+            PedScrapeSound = XmlRel.GetHash(Xml.GetChildInnerText(node, "PedScrapeSound"));
+            BreakSound = XmlRel.GetHash(Xml.GetChildInnerText(node, "BreakSound"));
+            DestroySound = XmlRel.GetHash(Xml.GetChildInnerText(node, "DestroySound"));
+            SettleSound = XmlRel.GetHash(Xml.GetChildInnerText(node, "SettleSound"));
+            BulletImpactSound = XmlRel.GetHash(Xml.GetChildInnerText(node, "BulletImpactSound"));
+            AutomaticBulletImpactSound = XmlRel.GetHash(Xml.GetChildInnerText(node, "AutomaticBulletImpactSound"));
+            ShotgunBulletImpactSound = XmlRel.GetHash(Xml.GetChildInnerText(node, "ShotgunBulletImpactSound"));
+            BigVehicleImpactSound = XmlRel.GetHash(Xml.GetChildInnerText(node, "BigVehicleImpactSound"));
+            PedPunch = XmlRel.GetHash(Xml.GetChildInnerText(node, "PedPunch"));
+            PedKick = XmlRel.GetHash(Xml.GetChildInnerText(node, "PedKick"));
+            MediumIntensity = Xml.GetChildUIntAttribute(node, "MediumIntensity", "value");
+            HighIntensity = Xml.GetChildUIntAttribute(node, "HighIntensity", "value");
+            Hardness = (byte)Xml.GetChildUIntAttribute(node, "Hardness", "value");
+            MinImpulseMag = Xml.GetChildFloatAttribute(node, "MinImpulseMag", "value");
+            MaxImpulseMag = Xml.GetChildFloatAttribute(node, "MaxImpulseMag", "value");
+            ImpulseMagScalar = (byte)Xml.GetChildUIntAttribute(node, "ImpulseMagScalar", "value");
+            MaxScrapeSpeed = Xml.GetChildFloatAttribute(node, "MaxScrapeSpeed", "value");
+            MinScrapeSpeed = Xml.GetChildFloatAttribute(node, "MinScrapeSpeed", "value");
+            ScrapeImpactMag = Xml.GetChildFloatAttribute(node, "ScrapeImpactMag", "value");
+            MaxRollSpeed = Xml.GetChildFloatAttribute(node, "MaxRollSpeed", "value");
+            MinRollSpeed = Xml.GetChildFloatAttribute(node, "MinRollSpeed", "value");
+            RollImpactMag = Xml.GetChildFloatAttribute(node, "RollImpactMag", "value");
+            BulletCollisionScaling = (byte)Xml.GetChildUIntAttribute(node, "BulletCollisionScaling", "value");
+            FootstepCustomImpactSound = XmlRel.GetHash(Xml.GetChildInnerText(node, "FootstepCustomImpactSound"));
+            FootstepMaterialHardness = Xml.GetChildFloatAttribute(node, "FootstepMaterialHardness", "value");
+            FootstepMaterialLoudness = Xml.GetChildFloatAttribute(node, "FootstepMaterialLoudness", "value");
+            FootstepSettings = XmlRel.GetHash(Xml.GetChildInnerText(node, "FootstepSettings"));
+            FootstepScaling = (byte)Xml.GetChildUIntAttribute(node, "FootstepScaling", "value");
+            ScuffstepScaling = (byte)Xml.GetChildUIntAttribute(node, "ScuffstepScaling", "value");
+            FootstepImpactScaling = (byte)Xml.GetChildUIntAttribute(node, "FootstepImpactScaling", "value");
+            ScuffImpactScaling = (byte)Xml.GetChildUIntAttribute(node, "ScuffImpactScaling", "value");
+            SkiSettings = XmlRel.GetHash(Xml.GetChildInnerText(node, "SkiSettings"));
             AnimalFootstepSettings = XmlRel.GetHash(Xml.GetChildInnerText(node, "AnimalFootstepSettings"));
-            AudioTrack2 = XmlRel.GetHash(Xml.GetChildInnerText(node, "AudioTrack2"));
-            Unk33 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk33"));
-            Unk34 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk34"));
-            Unk35 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk35"));
-            Unk36 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk36"));
-            Unk37 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk37"));
-            Unk38 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk38"));
-            Unk39 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk39"));
-            Unk40 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk40"));
-            Unk41 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk41"));
-            Unk42 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk42"));
-            Unk43 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk43"));
-            Unk44 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk44"));
-            Unk45 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk45"));
-            Unk46 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk46"));
-            Unk47 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk47"));
-            Unk48 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk48"));
-            Unk49 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk49"));
-            Unk50 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk50"));
-            Unk51 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk51"));
-            Unk52 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk52"));
-            Unk53 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk53"));
-            Unk54 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk54"));
-            Unk55 = Xml.GetChildFloatAttribute(node, "Unk55", "value");
-            Unk56 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk56"));
-            Unk57 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk57"));
-            Unk58 = Xml.GetChildIntAttribute(node, "Unk58", "value");
-            Unk59 = Xml.GetChildIntAttribute(node, "Unk59", "value");
-            Unk60 = Xml.GetChildFloatAttribute(node, "Unk60", "value");
-            Unk61 = Xml.GetChildIntAttribute(node, "Unk61", "value");
-            Unk62 = Xml.GetChildIntAttribute(node, "Unk62", "value");
-            Unk63 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk63"));
-            Unk64 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk64"));
-            Unk65 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk65"));
-            Unk66 = Xml.GetChildIntAttribute(node, "Unk66", "value");
-            Unk67 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk67"));
-            Unk68 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk68"));
-            Unk69 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk69"));
-            Unk70 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk70"));
-            Unk71 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk71"));
-            Unk72 = Xml.GetChildIntAttribute(node, "Unk72", "value");
-            Unk73 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk73"));
-            Unk74 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk74"));
-            Unk75 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk75"));
-            Unk76 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk76"));
-            Unk77 = Xml.GetChildFloatAttribute(node, "Unk77", "value");
-            Unk78 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk78"));
-            Unk79 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk79"));
-            Unk80 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk80"));
-            Unk81 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk81"));
-            Unk82 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk82"));
-            Unk83 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk83"));
-            Unk84 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk84"));
-            Unk85 = Xml.GetChildIntAttribute(node, "Unk85", "value");
-            Unk86 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk86"));
-            Unk87 = Xml.GetChildIntAttribute(node, "Unk87", "value");
-            Unk88 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk88"));
-            Unk89 = Xml.GetChildIntAttribute(node, "Unk89", "value");
+            WetMaterialReference = XmlRel.GetHash(Xml.GetChildInnerText(node, "WetMaterialReference"));
+            ImpactStartOffsetCurve = XmlRel.GetHash(Xml.GetChildInnerText(node, "ImpactStartOffsetCurve"));
+            ImpactVolCurve = XmlRel.GetHash(Xml.GetChildInnerText(node, "ImpactVolCurve"));
+            ScrapePitchCurve = XmlRel.GetHash(Xml.GetChildInnerText(node, "ScrapePitchCurve"));
+            ScrapeVolCurve = XmlRel.GetHash(Xml.GetChildInnerText(node, "ScrapeVolCurve"));
+            FastTyreRoll = XmlRel.GetHash(Xml.GetChildInnerText(node, "FastTyreRoll"));
+            DetailTyreRoll = XmlRel.GetHash(Xml.GetChildInnerText(node, "DetailTyreRoll"));
+            MainSkid = XmlRel.GetHash(Xml.GetChildInnerText(node, "MainSkid"));
+            SideSkid = XmlRel.GetHash(Xml.GetChildInnerText(node, "SideSkid"));
+            MetalShellCasingSmall = XmlRel.GetHash(Xml.GetChildInnerText(node, "MetalShellCasingSmall"));
+            MetalShellCasingMedium = XmlRel.GetHash(Xml.GetChildInnerText(node, "MetalShellCasingMedium"));
+            MetalShellCasingLarge = XmlRel.GetHash(Xml.GetChildInnerText(node, "MetalShellCasingLarge"));
+            MetalShellCasingSmallSlow = XmlRel.GetHash(Xml.GetChildInnerText(node, "MetalShellCasingSmallSlow"));
+            MetalShellCasingMediumSlow = XmlRel.GetHash(Xml.GetChildInnerText(node, "MetalShellCasingMediumSlow"));
+            MetalShellCasingLargeSlow = XmlRel.GetHash(Xml.GetChildInnerText(node, "MetalShellCasingLargeSlow"));
+            PlasticShellCasing = XmlRel.GetHash(Xml.GetChildInnerText(node, "PlasticShellCasing"));
+            PlasticShellCasingSlow = XmlRel.GetHash(Xml.GetChildInnerText(node, "PlasticShellCasingSlow"));
+            RollSound = XmlRel.GetHash(Xml.GetChildInnerText(node, "RollSound"));
+            RainLoop = XmlRel.GetHash(Xml.GetChildInnerText(node, "RainLoop"));
+            TyreBump = XmlRel.GetHash(Xml.GetChildInnerText(node, "TyreBump"));
+            ShockwaveSound = XmlRel.GetHash(Xml.GetChildInnerText(node, "ShockwaveSound"));
+            RandomAmbient = XmlRel.GetHash(Xml.GetChildInnerText(node, "RandomAmbient"));
+            ClimbSettings = XmlRel.GetHash(Xml.GetChildInnerText(node, "ClimbSettings"));
+            Dirtiness = Xml.GetChildFloatAttribute(node, "Dirtiness", "value");
+            SurfaceSettle = XmlRel.GetHash(Xml.GetChildInnerText(node, "SurfaceSettle"));
+            RidgedSurfaceLoop = XmlRel.GetHash(Xml.GetChildInnerText(node, "RidgedSurfaceLoop"));
+            CollisionCount = Xml.GetChildUIntAttribute(node, "CollisionCount", "value");
+            CollisionCountThreshold = Xml.GetChildUIntAttribute(node, "CollisionCountThreshold", "value");
+            VolumeThreshold = Xml.GetChildFloatAttribute(node, "VolumeThreshold", "value");
+            MaterialID = Xml.GetChildIntAttribute(node, "MaterialID", "value");
+            SoundSetRef = XmlRel.GetHash(Xml.GetChildInnerText(node, "SoundSetRef"));
+            DebrisLaunch = XmlRel.GetHash(Xml.GetChildInnerText(node, "DebrisLaunch"));
+            DebrisLand = XmlRel.GetHash(Xml.GetChildInnerText(node, "DebrisLand"));
+            OffRoadSound = XmlRel.GetHash(Xml.GetChildInnerText(node, "OffRoadSound"));
+            Roughness = Xml.GetChildFloatAttribute(node, "Roughness", "value");
+            DebrisOnSlope = XmlRel.GetHash(Xml.GetChildInnerText(node, "DebrisOnSlope"));
+            BicycleTyreRoll = XmlRel.GetHash(Xml.GetChildInnerText(node, "BicycleTyreRoll"));
+            OffRoadRumbleSound = XmlRel.GetHash(Xml.GetChildInnerText(node, "OffRoadRumbleSound"));
+            StealthSweetener = XmlRel.GetHash(Xml.GetChildInnerText(node, "StealthSweetener"));
+            Scuff = XmlRel.GetHash(Xml.GetChildInnerText(node, "Scuff"));
+            MaterialType = (byte)Xml.GetChildUIntAttribute(node, "MaterialType", "value");
+            SurfacePriority = (byte)Xml.GetChildUIntAttribute(node, "SurfacePriority", "value");
+            WheelSpinLoop = XmlRel.GetHash(Xml.GetChildInnerText(node, "WheelSpinLoop"));
+            BicycleTyreGritSound = XmlRel.GetHash(Xml.GetChildInnerText(node, "BicycleTyreGritSound"));
+            PedSlideSound = XmlRel.GetHash(Xml.GetChildInnerText(node, "PedSlideSound"));
+            PedRollSound = XmlRel.GetHash(Xml.GetChildInnerText(node, "PedRollSound"));
+            TimeInAirToTriggerBigLand = Xml.GetChildFloatAttribute(node, "TimeInAirToTriggerBigLand", "value");
+            MeleeOverideMaterial = XmlRel.GetHash(Xml.GetChildInnerText(node, "MeleeOverideMaterial"));
+            SelfName = XmlRel.GetHash(Xml.GetChildInnerText(node, "SelfName"));
+            SlowMoHardImpact = XmlRel.GetHash(Xml.GetChildInnerText(node, "SlowMoHardImpact"));
+            SlowMoBulletImpactSound = XmlRel.GetHash(Xml.GetChildInnerText(node, "SlowMoBulletImpactSound"));
+            SlowMoAutomaticBulletImpactSound = XmlRel.GetHash(Xml.GetChildInnerText(node, "SlowMoAutomaticBulletImpactSound"));
+            SlowMoShotgunBulletImpactSound = XmlRel.GetHash(Xml.GetChildInnerText(node, "SlowMoShotgunBulletImpactSound"));
+            SlowMoBulletImpactPreSuck = XmlRel.GetHash(Xml.GetChildInnerText(node, "SlowMoBulletImpactPreSuck"));
+            SlowMoBulletImpactPreSuckTime = Xml.GetChildIntAttribute(node, "SlowMoBulletImpactPreSuckTime", "value");
+            SlowMoAutomaticBulletImpactPreSuck = XmlRel.GetHash(Xml.GetChildInnerText(node, "SlowMoAutomaticBulletImpactPreSuck"));
+            SlowMoAutomaticBulletImpactPreSuckTime = Xml.GetChildIntAttribute(node, "SlowMoAutomaticBulletImpactPreSuckTime", "value");
+            SlowMoShotgunBulletImpactPreSuck = XmlRel.GetHash(Xml.GetChildInnerText(node, "SlowMoShotgunBulletImpactPreSuck"));
+            SlowMoShotgunBulletImpactPreSuckTime = Xml.GetChildIntAttribute(node, "SlowMoShotgunBulletImpactPreSuckTime", "value");
 
         }
         public override uint[] GetHashTableOffsets()
@@ -8372,18 +8413,18 @@ namespace CodeWalker.GameFiles
         }
         public override MetaHash[] GetCurveHashes()
         {
-            return new[] { Unk33, Unk34, Unk35, Unk36 };
+            return new[] { ImpactStartOffsetCurve, ImpactVolCurve, ScrapePitchCurve, ScrapeVolCurve };
         }
         public override MetaHash[] GetSoundHashes()
         {
-            return new[] { Unk01, Unk02, Unk03, Unk04, Unk05, Unk06, Unk07, Unk08, Unk09, Unk10, Unk11, Unk12, Unk13, Unk14, Unk28, 
-                Unk37, Unk38, Unk39, Unk40, Unk41, Unk42, Unk43, Unk44, Unk45, Unk46, Unk47, Unk48, Unk49, Unk50, Unk51, Unk52, Unk53,
-                Unk56, Unk57, Unk63, Unk64, Unk65, Unk67, Unk68, Unk69, Unk70, Unk71, Unk73, Unk74, Unk75, Unk76,
-                Unk80, Unk81, Unk82, Unk83, Unk84, Unk86, Unk88 };
+            return new[] { HardImpact, SolidImpact, SoftImpact, ScrapeSound, PedScrapeSound, BreakSound, DestroySound, SettleSound, BulletImpactSound, AutomaticBulletImpactSound, ShotgunBulletImpactSound, BigVehicleImpactSound, PedPunch, PedKick, FootstepCustomImpactSound, 
+                FastTyreRoll, DetailTyreRoll, MainSkid, SideSkid, MetalShellCasingSmall, MetalShellCasingMedium, MetalShellCasingLarge, MetalShellCasingSmallSlow, MetalShellCasingMediumSlow, MetalShellCasingLargeSlow, PlasticShellCasing, PlasticShellCasingSlow, RollSound, RainLoop, TyreBump, ShockwaveSound, RandomAmbient,
+                SurfaceSettle, RidgedSurfaceLoop, DebrisLaunch, DebrisLand, OffRoadSound, DebrisOnSlope, BicycleTyreRoll, OffRoadRumbleSound, StealthSweetener, Scuff, SurfacePriority, WheelSpinLoop, BicycleTyreGritSound, PedSlideSound, PedRollSound,
+                SlowMoHardImpact, SlowMoBulletImpactSound, SlowMoAutomaticBulletImpactSound, SlowMoShotgunBulletImpactSound, SlowMoBulletImpactPreSuck, SlowMoAutomaticBulletImpactPreSuck, SlowMoShotgunBulletImpactPreSuck };
         }
         public override MetaHash[] GetGameHashes()
         {
-            return new[] { Footsteps, Unk32, AnimalFootstepSettings, Unk54, Unk78, /*Unk79*/ };
+            return new[] { FootstepSettings, SkiSettings, AnimalFootstepSettings, ClimbSettings, MeleeOverideMaterial };
         }
     }
 
@@ -9590,18 +9631,18 @@ namespace CodeWalker.GameFiles
     [TC(typeof(EXP))] 
     public class Dat151ShoreLinePoolAudioSettings : Dat151RelData
     {
-        public FlagsUint Unk01 { get; set; }
-        public Vector4 Unk02 { get; set; }
-        public int Unk03 { get; set; }
-        public int Unk04 { get; set; }
-        public int Unk05 { get; set; }
-        public int Unk06 { get; set; }
-        public int Unk07 { get; set; }
-        public int Unk08 { get; set; }
-        public int Unk09 { get; set; }
-        public int Unk10 { get; set; }
-        public int Unk11 { get; set; }
-        public float Unk12 { get; set; }//really float? or hash?
+        public FlagsUint Flags { get; set; }
+        public Vector4 ActivationBox { get; set; }
+        public float RotationAngle { get; set; }
+        public int WaterLappingMinDelay { get; set; }
+        public int WaterLappingMaxDelay { get; set; }
+        public int WaterSplashMinDelay { get; set; }
+        public int WaterSplashMaxDelay { get; set; }
+        public int FirstQuadIndex { get; set; }
+        public int SecondQuadIndex { get; set; }
+        public int ThirdQuadIndex { get; set; }
+        public int FourthQuadIndex { get; set; }
+        public float SmallestDistanceToPoint { get; set; }
         public int PointsCount { get; set; }
         public Vector2[] Points { get; set; }
 
@@ -9613,18 +9654,18 @@ namespace CodeWalker.GameFiles
         }
         public Dat151ShoreLinePoolAudioSettings(RelData d, BinaryReader br) : base(d, br)
         {
-            Unk01 = br.ReadUInt32();
-            Unk02 = new Vector4(br.ReadSingle(), br.ReadSingle(), br.ReadSingle(), br.ReadSingle());
-            Unk03 = br.ReadInt32();
-            Unk04 = br.ReadInt32();
-            Unk05 = br.ReadInt32();
-            Unk06 = br.ReadInt32();
-            Unk07 = br.ReadInt32();
-            Unk08 = br.ReadInt32();
-            Unk09 = br.ReadInt32();
-            Unk10 = br.ReadInt32();
-            Unk11 = br.ReadInt32();
-            Unk12 = br.ReadSingle();
+            Flags = br.ReadUInt32();
+            ActivationBox = new Vector4(br.ReadSingle(), br.ReadSingle(), br.ReadSingle(), br.ReadSingle());
+            RotationAngle = br.ReadInt32();
+            WaterLappingMinDelay = br.ReadInt32();
+            WaterLappingMaxDelay = br.ReadInt32();
+            WaterSplashMinDelay = br.ReadInt32();
+            WaterSplashMaxDelay = br.ReadInt32();
+            FirstQuadIndex = br.ReadInt32();
+            SecondQuadIndex = br.ReadInt32();
+            ThirdQuadIndex = br.ReadInt32();
+            FourthQuadIndex = br.ReadInt32();
+            SmallestDistanceToPoint = br.ReadSingle();
 
             PointsCount = br.ReadInt32();
             var points = new Vector2[PointsCount];
@@ -9638,21 +9679,21 @@ namespace CodeWalker.GameFiles
         {
             WriteTypeAndOffset(bw);
 
-            bw.Write(Unk01);
-            bw.Write(Unk02.X);
-            bw.Write(Unk02.Y);
-            bw.Write(Unk02.Z);
-            bw.Write(Unk02.W);
-            bw.Write(Unk03);
-            bw.Write(Unk04);
-            bw.Write(Unk05);
-            bw.Write(Unk06);
-            bw.Write(Unk07);
-            bw.Write(Unk08);
-            bw.Write(Unk09);
-            bw.Write(Unk10);
-            bw.Write(Unk11);
-            bw.Write(Unk12);
+            bw.Write(Flags);
+            bw.Write(ActivationBox.X);
+            bw.Write(ActivationBox.Y);
+            bw.Write(ActivationBox.Z);
+            bw.Write(ActivationBox.W);
+            bw.Write(RotationAngle);
+            bw.Write(WaterLappingMinDelay);
+            bw.Write(WaterLappingMaxDelay);
+            bw.Write(WaterSplashMinDelay);
+            bw.Write(WaterSplashMaxDelay);
+            bw.Write(FirstQuadIndex);
+            bw.Write(SecondQuadIndex);
+            bw.Write(ThirdQuadIndex);
+            bw.Write(FourthQuadIndex);
+            bw.Write(SmallestDistanceToPoint);
 
             bw.Write(PointsCount);
             for (int i = 0; i < PointsCount; i++)
@@ -9663,36 +9704,34 @@ namespace CodeWalker.GameFiles
         }
         public override void WriteXml(StringBuilder sb, int indent)
         {
-            RelXml.ValueTag(sb, indent, "Unk01", "0x" + Unk01.Hex);
-            RelXml.SelfClosingTag(sb, indent, "Unk02 " + FloatUtil.GetVector4XmlString(Unk02));
-            RelXml.ValueTag(sb, indent, "Unk03", Unk03.ToString());
-            RelXml.ValueTag(sb, indent, "Unk04", Unk04.ToString());
-            RelXml.ValueTag(sb, indent, "Unk05", Unk05.ToString());
-            RelXml.ValueTag(sb, indent, "Unk06", Unk06.ToString());
-            RelXml.ValueTag(sb, indent, "Unk07", Unk07.ToString());
-            RelXml.ValueTag(sb, indent, "Unk08", Unk08.ToString());
-            RelXml.ValueTag(sb, indent, "Unk09", Unk09.ToString());
-            RelXml.ValueTag(sb, indent, "Unk10", Unk10.ToString());
-            RelXml.ValueTag(sb, indent, "Unk11", Unk11.ToString());
-            RelXml.ValueTag(sb, indent, "Unk12", FloatUtil.ToString(Unk12));
-            //RelXml.StringTag(sb, indent, "Unk12", RelXml.HashString(Unk12));
+            RelXml.ValueTag(sb, indent, "Flags", "0x" + Flags.Hex);
+            RelXml.SelfClosingTag(sb, indent, "ActivationBox " + FloatUtil.GetVector4XmlString(ActivationBox));
+            RelXml.ValueTag(sb, indent, "RotationAngle", FloatUtil.ToString(RotationAngle));
+            RelXml.ValueTag(sb, indent, "WaterLappingMinDelay", WaterLappingMinDelay.ToString());
+            RelXml.ValueTag(sb, indent, "WaterLappingMaxDelay", WaterLappingMaxDelay.ToString());
+            RelXml.ValueTag(sb, indent, "WaterSplashMinDelay", WaterSplashMinDelay.ToString());
+            RelXml.ValueTag(sb, indent, "WaterSplashMaxDelay", WaterSplashMaxDelay.ToString());
+            RelXml.ValueTag(sb, indent, "FirstQuadIndex", FirstQuadIndex.ToString());
+            RelXml.ValueTag(sb, indent, "SecondQuadIndex", SecondQuadIndex.ToString());
+            RelXml.ValueTag(sb, indent, "ThirdQuadIndex", ThirdQuadIndex.ToString());
+            RelXml.ValueTag(sb, indent, "FourthQuadIndex", FourthQuadIndex.ToString());
+            RelXml.ValueTag(sb, indent, "SmallestDistanceToPoint", FloatUtil.ToString(SmallestDistanceToPoint));
             RelXml.WriteRawArray(sb, Points, indent, "Points", "", RelXml.FormatVector2, 1);
         }
         public override void ReadXml(XmlNode node)
         {
-            Unk01 = Xml.GetChildUIntAttribute(node, "Unk01", "value");
-            Unk02 = Xml.GetChildVector4Attributes(node, "Unk02");
-            Unk03 = Xml.GetChildIntAttribute(node, "Unk03", "value");
-            Unk04 = Xml.GetChildIntAttribute(node, "Unk04", "value");
-            Unk05 = Xml.GetChildIntAttribute(node, "Unk05", "value");
-            Unk06 = Xml.GetChildIntAttribute(node, "Unk06", "value");
-            Unk07 = Xml.GetChildIntAttribute(node, "Unk07", "value");
-            Unk08 = Xml.GetChildIntAttribute(node, "Unk08", "value");
-            Unk09 = Xml.GetChildIntAttribute(node, "Unk09", "value");
-            Unk10 = Xml.GetChildIntAttribute(node, "Unk10", "value");
-            Unk11 = Xml.GetChildIntAttribute(node, "Unk11", "value");
-            Unk12 = Xml.GetChildFloatAttribute(node, "Unk12", "value");
-            //Unk12 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk12"));
+            Flags = Xml.GetChildUIntAttribute(node, "Flags", "value");
+            ActivationBox = Xml.GetChildVector4Attributes(node, "ActivationBox");
+            RotationAngle = Xml.GetChildFloatAttribute(node, "RotationAngle", "value");
+            WaterLappingMinDelay = Xml.GetChildIntAttribute(node, "WaterLappingMinDelay", "value");
+            WaterLappingMaxDelay = Xml.GetChildIntAttribute(node, "WaterLappingMaxDelay", "value");
+            WaterSplashMinDelay = Xml.GetChildIntAttribute(node, "WaterSplashMinDelay", "value");
+            WaterSplashMaxDelay = Xml.GetChildIntAttribute(node, "WaterSplashMaxDelay", "value");
+            FirstQuadIndex = Xml.GetChildIntAttribute(node, "FirstQuadIndex", "value");
+            SecondQuadIndex = Xml.GetChildIntAttribute(node, "SecondQuadIndex", "value");
+            ThirdQuadIndex = Xml.GetChildIntAttribute(node, "ThirdQuadIndex", "value");
+            FourthQuadIndex = Xml.GetChildIntAttribute(node, "FourthQuadIndex", "value");
+            SmallestDistanceToPoint = Xml.GetChildFloatAttribute(node, "SmallestDistanceToPoint", "value");
             Points = Xml.GetChildRawVector2Array(node, "Points");
             PointsCount = Points?.Length ?? 0;
         }
@@ -9701,11 +9740,11 @@ namespace CodeWalker.GameFiles
     [TC(typeof(EXP))] 
     public class Dat151ShoreLineLakeAudioSettings : Dat151RelData
     {
-        public FlagsUint Unk01 { get; set; }
-        public Vector4 Unk02 { get; set; }
-        public int Unk03 { get; set; }
-        public int Unk04 { get; set; }
-        public uint Unk05 { get; set; }
+        public FlagsUint Flags { get; set; }
+        public Vector4 ActivationBox { get; set; }
+        public float RotationAngle { get; set; }
+        public uint NextShoreline { get; set; }
+        public uint LakeSize { get; set; }
         public int PointsCount { get; set; }
         public Vector2[] Points { get; set; }
 
@@ -9716,14 +9755,14 @@ namespace CodeWalker.GameFiles
         }
         public Dat151ShoreLineLakeAudioSettings(RelData d, BinaryReader br) : base(d, br)
         {
-            Unk01 = br.ReadUInt32();
-            Unk02 = new Vector4(br.ReadSingle(), br.ReadSingle(), br.ReadSingle(), br.ReadSingle());
-            Unk03 = br.ReadInt32();
-            Unk04 = br.ReadInt32();
-            Unk05 = br.ReadUInt32();
+            Flags = br.ReadUInt32();
+            ActivationBox = new Vector4(br.ReadSingle(), br.ReadSingle(), br.ReadSingle(), br.ReadSingle());
+            RotationAngle = br.ReadInt32();
+            NextShoreline = br.ReadUInt32();
+            LakeSize = br.ReadUInt32();
 
-            byte b1 = (byte)((Unk05) & 0xFF);
-            byte b2 = (byte)((Unk05>>8) & 0xFF);
+            byte b1 = (byte)((LakeSize) & 0xFF);
+            byte b2 = (byte)((LakeSize>>8) & 0xFF);
             PointsCount = b2;
 
             var points = new Vector2[PointsCount];
@@ -9737,18 +9776,14 @@ namespace CodeWalker.GameFiles
         {
             WriteTypeAndOffset(bw);
 
-            bw.Write(Unk01);
-            bw.Write(Unk02.X);
-            bw.Write(Unk02.Y);
-            bw.Write(Unk02.Z);
-            bw.Write(Unk02.W);
-            bw.Write(Unk03);
-            bw.Write(Unk04);
-            bw.Write(Unk05);
-
-            //byte b1 = (byte)((Unk05) & 0xFF);
-            //byte b2 = (byte)((Unk05 >> 8) & 0xFF);
-            //PointsCount = b2;
+            bw.Write(Flags);
+            bw.Write(ActivationBox.X);
+            bw.Write(ActivationBox.Y);
+            bw.Write(ActivationBox.Z);
+            bw.Write(ActivationBox.W);
+            bw.Write(RotationAngle);
+            bw.Write(NextShoreline);
+            bw.Write(LakeSize);
 
             for (int i = 0; i < PointsCount; i++)
             {
@@ -9758,20 +9793,20 @@ namespace CodeWalker.GameFiles
         }
         public override void WriteXml(StringBuilder sb, int indent)
         {
-            RelXml.ValueTag(sb, indent, "Unk01", "0x" + Unk01.Hex);
-            RelXml.SelfClosingTag(sb, indent, "Unk02 " + FloatUtil.GetVector4XmlString(Unk02));
-            RelXml.ValueTag(sb, indent, "Unk03", Unk03.ToString());
-            RelXml.ValueTag(sb, indent, "Unk04", Unk04.ToString());
-            RelXml.ValueTag(sb, indent, "Unk05", Unk05.ToString());
+            RelXml.ValueTag(sb, indent, "Flags", "0x" + Flags.Hex);
+            RelXml.SelfClosingTag(sb, indent, "ActivationBox " + FloatUtil.GetVector4XmlString(ActivationBox));
+            RelXml.ValueTag(sb, indent, "RotationAngle", FloatUtil.ToString(RotationAngle));
+            RelXml.ValueTag(sb, indent, "NextShoreline", NextShoreline.ToString());
+            RelXml.ValueTag(sb, indent, "LakeSize", LakeSize.ToString());
             RelXml.WriteRawArray(sb, Points, indent, "Points", "", RelXml.FormatVector2, 1);
         }
         public override void ReadXml(XmlNode node)
         {
-            Unk01 = Xml.GetChildUIntAttribute(node, "Unk01", "value");
-            Unk02 = Xml.GetChildVector4Attributes(node, "Unk02");
-            Unk03 = Xml.GetChildIntAttribute(node, "Unk03", "value");
-            Unk04 = Xml.GetChildIntAttribute(node, "Unk04", "value");
-            Unk05 = Xml.GetChildUIntAttribute(node, "Unk05", "value");
+            Flags = Xml.GetChildUIntAttribute(node, "Flags", "value");
+            ActivationBox = Xml.GetChildVector4Attributes(node, "ActivationBox");
+            RotationAngle = Xml.GetChildFloatAttribute(node, "RotationAngle", "value");
+            NextShoreline = Xml.GetChildUIntAttribute(node, "NextShoreline", "value");
+            LakeSize = Xml.GetChildUIntAttribute(node, "LakeSize", "value");
             Points = Xml.GetChildRawVector2Array(node, "Points");
             PointsCount = Points?.Length ?? 0;
         }
@@ -12125,7 +12160,9 @@ namespace CodeWalker.GameFiles
         public MetaHash ScannerModel { get; set; }
         public MetaHash ScannerCategory { get; set; }
         public MetaHash ScannerVehicleSettings { get; set; }
-        public FlagsUint RadioType { get; set; }
+        public byte RadioType { get; set; }
+        public byte RadioGenre { get; set; }
+        public short padding00 { get; set; }
         public MetaHash HornLoop { get; set; }
         public MetaHash IgnitionOneShot { get; set; }
         public MetaHash ShutdownOneShot { get; set; }
@@ -12199,7 +12236,9 @@ namespace CodeWalker.GameFiles
             ScannerModel = br.ReadUInt32();
             ScannerCategory = br.ReadUInt32();
             ScannerVehicleSettings = br.ReadUInt32();
-            RadioType = br.ReadUInt32();
+            RadioType = br.ReadByte();
+            RadioGenre = br.ReadByte();
+            padding00 = br.ReadInt16();
             HornLoop = br.ReadUInt32();
             IgnitionOneShot = br.ReadUInt32();
             ShutdownOneShot = br.ReadUInt32();
@@ -12270,6 +12309,8 @@ namespace CodeWalker.GameFiles
             bw.Write(ScannerCategory);
             bw.Write(ScannerVehicleSettings);
             bw.Write(RadioType);
+            bw.Write(RadioGenre);
+            bw.Write(padding00);
             bw.Write(HornLoop);
             bw.Write(IgnitionOneShot);
             bw.Write(ShutdownOneShot);
@@ -12338,7 +12379,8 @@ namespace CodeWalker.GameFiles
             RelXml.StringTag(sb, indent, "ScannerModel", RelXml.HashString(ScannerModel));
             RelXml.StringTag(sb, indent, "ScannerCategory", RelXml.HashString(ScannerCategory));
             RelXml.StringTag(sb, indent, "ScannerVehicleSettings", RelXml.HashString(ScannerVehicleSettings));
-            RelXml.ValueTag(sb, indent, "RadioType", "0x" + RadioType.Hex);
+            RelXml.ValueTag(sb, indent, "RadioType", RadioType.ToString());
+            RelXml.ValueTag(sb, indent, "RadioGenre", RadioGenre.ToString());
             RelXml.StringTag(sb, indent, "HornLoop", RelXml.HashString(HornLoop));
             RelXml.StringTag(sb, indent, "IgnitionOneShot", RelXml.HashString(IgnitionOneShot));
             RelXml.StringTag(sb, indent, "ShutdownOneShot", RelXml.HashString(ShutdownOneShot));
@@ -12407,7 +12449,8 @@ namespace CodeWalker.GameFiles
             ScannerModel = XmlRel.GetHash(Xml.GetChildInnerText(node, "ScannerModel"));
             ScannerCategory = XmlRel.GetHash(Xml.GetChildInnerText(node, "ScannerCategory"));
             ScannerVehicleSettings = XmlRel.GetHash(Xml.GetChildInnerText(node, "ScannerVehicleSettings"));
-            RadioType = Xml.GetChildUIntAttribute(node, "RadioType", "value");
+            RadioType = (byte)Xml.GetChildUIntAttribute(node, "RadioType", "value");
+            RadioGenre = (byte)Xml.GetChildUIntAttribute(node, "RadioGenre", "value");
             HornLoop = XmlRel.GetHash(Xml.GetChildInnerText(node, "HornLoop"));
             IgnitionOneShot = XmlRel.GetHash(Xml.GetChildInnerText(node, "IgnitionOneShot"));
             ShutdownOneShot = XmlRel.GetHash(Xml.GetChildInnerText(node, "ShutdownOneShot"));
