@@ -19058,57 +19058,52 @@ namespace CodeWalker.GameFiles
     [TC(typeof(EXP))] 
     public class Dat151PedWallaSpeechSettingsListItem : IMetaXmlItem
     {
-        public MetaHash Unk01 { get; set; }
-        public float Unk02 { get; set; }
-        public float Unk03 { get; set; }
-        public byte Unk04 { get; set; }
-        public byte Unk05 { get; set; }
-        public short Unk06 { get; set; }
+        public MetaHash PedWallaSettings { get; set; }
+        public float Weight { get; set; }
+        public float PedDensityThreshold { get; set; }
+        public byte IsMale { get; set; }
+        public byte IsGang { get; set; }
+        public short padding00 { get; set; }
 
         public Dat151PedWallaSpeechSettingsListItem()
         { }
         public Dat151PedWallaSpeechSettingsListItem(BinaryReader br)
         {
-            Unk01 = br.ReadUInt32();
-            Unk02 = br.ReadSingle();
-            Unk03 = br.ReadSingle();
-            Unk04 = br.ReadByte();
-            Unk05 = br.ReadByte();
-            Unk06 = br.ReadInt16();
-
-            if (Unk06 != 0)
-            { }
+            PedWallaSettings = br.ReadUInt32();
+            Weight = br.ReadSingle();
+            PedDensityThreshold = br.ReadSingle();
+            IsMale = br.ReadByte();
+            IsGang = br.ReadByte();
+            padding00 = br.ReadInt16();
         }
         public void Write(BinaryWriter bw)
         {
-            bw.Write(Unk01);
-            bw.Write(Unk02);
-            bw.Write(Unk03);
-            bw.Write(Unk04);
-            bw.Write(Unk05);
-            bw.Write(Unk06);
+            bw.Write(PedWallaSettings);
+            bw.Write(Weight);
+            bw.Write(PedDensityThreshold);
+            bw.Write(IsMale);
+            bw.Write(IsGang);
+            bw.Write(padding00);
         }
         public void WriteXml(StringBuilder sb, int indent)
         {
-            RelXml.StringTag(sb, indent, "Unk01", RelXml.HashString(Unk01));
-            RelXml.ValueTag(sb, indent, "Unk02", FloatUtil.ToString(Unk02));
-            RelXml.ValueTag(sb, indent, "Unk03", FloatUtil.ToString(Unk03));
-            RelXml.ValueTag(sb, indent, "Unk04", Unk04.ToString());
-            RelXml.ValueTag(sb, indent, "Unk05", Unk05.ToString());
-            RelXml.ValueTag(sb, indent, "Unk06", Unk06.ToString());
+            RelXml.StringTag(sb, indent, "PedWallaSettings", RelXml.HashString(PedWallaSettings));
+            RelXml.ValueTag(sb, indent, "Weight", FloatUtil.ToString(Weight));
+            RelXml.ValueTag(sb, indent, "PedDensityThreshold", FloatUtil.ToString(PedDensityThreshold));
+            RelXml.ValueTag(sb, indent, "IsMale", IsMale.ToString());
+            RelXml.ValueTag(sb, indent, "IsGang", IsGang.ToString());
         }
         public void ReadXml(XmlNode node)
         {
-            Unk01 = XmlRel.GetHash(Xml.GetChildInnerText(node, "Unk01"));
-            Unk02 = Xml.GetChildFloatAttribute(node, "Unk02", "value");
-            Unk03 = Xml.GetChildFloatAttribute(node, "Unk03", "value");
-            Unk04 = (byte)Xml.GetChildUIntAttribute(node, "Unk04", "value");
-            Unk05 = (byte)Xml.GetChildUIntAttribute(node, "Unk05", "value");
-            Unk06 = (short)Xml.GetChildIntAttribute(node, "Unk06", "value");
+            PedWallaSettings = XmlRel.GetHash(Xml.GetChildInnerText(node, "PedWallaSettings"));
+            Weight = Xml.GetChildFloatAttribute(node, "Weight", "value");
+            PedDensityThreshold = Xml.GetChildFloatAttribute(node, "PedDensityThreshold", "value");
+            IsMale = (byte)Xml.GetChildUIntAttribute(node, "IsMale", "value");
+            IsGang = (byte)Xml.GetChildUIntAttribute(node, "IsGang", "value");
         }
         public override string ToString()
         {
-            return Unk01.ToString() + ": " + Unk02.ToString() + ", " + Unk03.ToString() + ", " + Unk04.ToString() + ", " + Unk05.ToString();
+            return PedWallaSettings.ToString() + ": " + Weight.ToString() + ", " + PedDensityThreshold.ToString() + ", " + IsMale.ToString() + ", " + IsGang.ToString();
         }
     }
 
@@ -19158,7 +19153,7 @@ namespace CodeWalker.GameFiles
             {
                 foreach (var item in Items)
                 {
-                    list.Add(item.Unk01);
+                    list.Add(item.PedWallaSettings);
                 }
             }
             return list.ToArray();
