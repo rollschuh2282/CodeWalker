@@ -6976,6 +6976,8 @@ namespace CodeWalker.GameFiles
 
             bw.Write(Flags);
             bw.Write(Constrain);
+            bw.Write(padding00);
+            bw.Write(padding01);
             bw.Write(NumTimingConstraints);
             bw.Write(Bar);
             bw.Write(Beat);
@@ -7215,6 +7217,8 @@ namespace CodeWalker.GameFiles
 
             bw.Write(Flags);
             bw.Write(Constrain);
+            bw.Write(padding00);
+            bw.Write(padding01);
             bw.Write(NumTimingConstraints);
             bw.Write(Bar);
             bw.Write(Beat);
@@ -7520,6 +7524,8 @@ namespace CodeWalker.GameFiles
 
             bw.Write(Flags);
             bw.Write(Constrain);
+            bw.Write(padding00);
+            bw.Write(padding01);
             bw.Write(NumTimingConstraints);
             bw.Write(Bar);
             bw.Write(Beat);
@@ -9843,6 +9849,7 @@ namespace CodeWalker.GameFiles
             bw.Write(NextShoreline);
             bw.Write(LakeSize);
             bw.Write(NumShorelinePoints);
+            bw.Write(padding00);
 
             for (int i = 0; i < NumShorelinePoints; i++)
             {
@@ -14806,6 +14813,8 @@ namespace CodeWalker.GameFiles
             bw.Write(RepeatTime);
             bw.Write(RepeatTimeOnSameVoice);
             bw.Write(VolumeType);
+            bw.Write(Audibility);
+            bw.Write(padding00);
             bw.Write(GenderNonSpecificVersion);
             bw.Write(TimeCanNextPlay);
             bw.Write(ResolvingFunction);
