@@ -69,9 +69,9 @@ namespace CodeWalker.Project.Panels
                 SetCheckedListBoxValues(FlagsCheckedListBox1, YnvPoly.Flags1);
                 SetCheckedListBoxValues(FlagsCheckedListBox2, YnvPoly.Flags2);
                 SetCheckedListBoxValues(FlagsCheckedListBox3, YnvPoly.Flags3);
-                SetCheckedListBoxValues(FlagsCheckedListBox4, YnvPoly.Flags4);
-                UnkXUpDown.Value = YnvPoly.UnkX;
-                UnkYUpDown.Value = YnvPoly.UnkY;
+                SetCheckedListBoxValues(FlagsCheckedListBox4, YnvPoly.CoverDirection);
+                UnkXUpDown.Value = YnvPoly.CentroidX;
+                UnkYUpDown.Value = YnvPoly.CentroidY;
                 populatingui = false;
             }
         }
@@ -231,9 +231,9 @@ namespace CodeWalker.Project.Panels
             byte flags = GetCheckedListBoxValues(FlagsCheckedListBox4, e);
             lock (ProjectForm.ProjectSyncRoot)
             {
-                if (YnvPoly.Flags4 != flags)
+                if (YnvPoly.CoverDirection != flags)
                 {
-                    YnvPoly.Flags4 = flags;
+                    YnvPoly.CoverDirection = flags;
                     ProjectForm.SetYnvHasChanged(true);
                 }
             }
@@ -250,9 +250,9 @@ namespace CodeWalker.Project.Panels
             byte unkx = (byte)UnkXUpDown.Value;
             lock (ProjectForm.ProjectSyncRoot)
             {
-                if (YnvPoly.UnkX != unkx)
+                if (YnvPoly.CentroidX != unkx)
                 {
-                    YnvPoly.UnkX = unkx;
+                    YnvPoly.CentroidX = unkx;
                     ProjectForm.SetYnvHasChanged(true);
                 }
             }
@@ -265,9 +265,9 @@ namespace CodeWalker.Project.Panels
             byte unky = (byte)UnkYUpDown.Value;
             lock (ProjectForm.ProjectSyncRoot)
             {
-                if (YnvPoly.UnkY != unky)
+                if (YnvPoly.CentroidY != unky)
                 {
-                    YnvPoly.UnkY = unky;
+                    YnvPoly.CentroidY = unky;
                     ProjectForm.SetYnvHasChanged(true);
                 }
             }

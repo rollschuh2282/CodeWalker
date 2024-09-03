@@ -144,7 +144,7 @@
             // 
             FlagsCheckedListBox3.CheckOnClick = true;
             FlagsCheckedListBox3.FormattingEnabled = true;
-            FlagsCheckedListBox3.Items.AddRange(new object[] { "1 - Network Spawn Candidate", "2 - Is Road", "3 - Lies Along Edge of Mesh", "4 - Is Train Track", "5 - Is Shallow Water", "6 - Ped Density1", "7 - Ped Density2", "8 - Ped Density3" });
+            FlagsCheckedListBox3.Items.AddRange(new object[] { "1 - Network Spawn Candidate", "2 - Is Road", "3 - Lies Along Edge of Mesh", "4 - Is Train Track", "5 - Is Shallow Water", "6 - PedDensity1", "7 - PedDensity2", "8 - PedDensity3" });
             FlagsCheckedListBox3.Location = new System.Drawing.Point(331, 78);
             FlagsCheckedListBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             FlagsCheckedListBox3.Name = "FlagsCheckedListBox3";
@@ -166,7 +166,7 @@
             // 
             FlagsCheckedListBox4.CheckOnClick = true;
             FlagsCheckedListBox4.FormattingEnabled = true;
-            FlagsCheckedListBox4.Items.AddRange(new object[] { "0 - SlopeSouth", "1 - SlopeSouthEast", "2 - SlopeEast", "3 - SlopeNorthEast", "4 - SlopeNorth", "5 - SlopeNorthWest", "6 - SlopeWest", "7 - SlopeSouthWest" });
+            FlagsCheckedListBox4.Items.AddRange(new object[] { "0 - Cover South", "1 - Cover South East", "2 - Cover East", "3 - Cover North East", "4 - Cover North", "5 - Cover North West", "6 - Cover West", "7 - Cover South West" });
             FlagsCheckedListBox4.Location = new System.Drawing.Point(491, 78);
             FlagsCheckedListBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             FlagsCheckedListBox4.Name = "FlagsCheckedListBox4";

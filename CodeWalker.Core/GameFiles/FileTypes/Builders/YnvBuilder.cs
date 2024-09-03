@@ -509,7 +509,7 @@ namespace CodeWalker.Core.GameFiles.FileTypes.Builders
                             }
                         }
                     }
-                    poly.B19_IsCellEdge = border;
+                    poly.LiesAlongEdgeOfMesh = border;
                 }
 
 
