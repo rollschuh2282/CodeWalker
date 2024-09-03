@@ -29,308 +29,271 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditYnvPolyPanel));
-            this.AreaIDUpDown = new System.Windows.Forms.NumericUpDown();
-            this.label92 = new System.Windows.Forms.Label();
-            this.PartIDUpDown = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
-            this.PortalIDUpDown = new System.Windows.Forms.NumericUpDown();
-            this.label2 = new System.Windows.Forms.Label();
-            this.FlagsCheckedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.FlagsCheckedListBox2 = new System.Windows.Forms.CheckedListBox();
-            this.FlagsCheckedListBox3 = new System.Windows.Forms.CheckedListBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.FlagsCheckedListBox4 = new System.Windows.Forms.CheckedListBox();
-            this.UnkXUpDown = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
-            this.UnkYUpDown = new System.Windows.Forms.NumericUpDown();
-            this.label4 = new System.Windows.Forms.Label();
-            this.DeletePolyButton = new System.Windows.Forms.Button();
-            this.AddToProjectButton = new System.Windows.Forms.Button();
-            this.PortalCountUpDown = new System.Windows.Forms.NumericUpDown();
-            this.label6 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.AreaIDUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PartIDUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PortalIDUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UnkXUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UnkYUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PortalCountUpDown)).BeginInit();
-            this.SuspendLayout();
+            AreaIDUpDown = new System.Windows.Forms.NumericUpDown();
+            label92 = new System.Windows.Forms.Label();
+            PartIDUpDown = new System.Windows.Forms.NumericUpDown();
+            label1 = new System.Windows.Forms.Label();
+            PortalIDUpDown = new System.Windows.Forms.NumericUpDown();
+            label2 = new System.Windows.Forms.Label();
+            FlagsCheckedListBox1 = new System.Windows.Forms.CheckedListBox();
+            FlagsCheckedListBox2 = new System.Windows.Forms.CheckedListBox();
+            FlagsCheckedListBox3 = new System.Windows.Forms.CheckedListBox();
+            label5 = new System.Windows.Forms.Label();
+            FlagsCheckedListBox4 = new System.Windows.Forms.CheckedListBox();
+            UnkXUpDown = new System.Windows.Forms.NumericUpDown();
+            label3 = new System.Windows.Forms.Label();
+            UnkYUpDown = new System.Windows.Forms.NumericUpDown();
+            label4 = new System.Windows.Forms.Label();
+            DeletePolyButton = new System.Windows.Forms.Button();
+            AddToProjectButton = new System.Windows.Forms.Button();
+            PortalCountUpDown = new System.Windows.Forms.NumericUpDown();
+            label6 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)AreaIDUpDown).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)PartIDUpDown).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)PortalIDUpDown).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)UnkXUpDown).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)UnkYUpDown).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)PortalCountUpDown).BeginInit();
+            SuspendLayout();
             // 
             // AreaIDUpDown
             // 
-            this.AreaIDUpDown.Location = new System.Drawing.Point(59, 12);
-            this.AreaIDUpDown.Maximum = new decimal(new int[] {
-            65535,
-            0,
-            0,
-            0});
-            this.AreaIDUpDown.Name = "AreaIDUpDown";
-            this.AreaIDUpDown.Size = new System.Drawing.Size(71, 20);
-            this.AreaIDUpDown.TabIndex = 2;
-            this.AreaIDUpDown.ValueChanged += new System.EventHandler(this.AreaIDUpDown_ValueChanged);
+            AreaIDUpDown.Location = new System.Drawing.Point(69, 14);
+            AreaIDUpDown.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            AreaIDUpDown.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
+            AreaIDUpDown.Name = "AreaIDUpDown";
+            AreaIDUpDown.Size = new System.Drawing.Size(83, 23);
+            AreaIDUpDown.TabIndex = 2;
+            AreaIDUpDown.ValueChanged += AreaIDUpDown_ValueChanged;
             // 
             // label92
             // 
-            this.label92.AutoSize = true;
-            this.label92.Location = new System.Drawing.Point(7, 14);
-            this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(46, 13);
-            this.label92.TabIndex = 1;
-            this.label92.Text = "Area ID:";
+            label92.AutoSize = true;
+            label92.Location = new System.Drawing.Point(8, 16);
+            label92.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label92.Name = "label92";
+            label92.Size = new System.Drawing.Size(48, 15);
+            label92.TabIndex = 1;
+            label92.Text = "Area ID:";
             // 
             // PartIDUpDown
             // 
-            this.PartIDUpDown.Location = new System.Drawing.Point(193, 12);
-            this.PartIDUpDown.Maximum = new decimal(new int[] {
-            65535,
-            0,
-            0,
-            0});
-            this.PartIDUpDown.Name = "PartIDUpDown";
-            this.PartIDUpDown.Size = new System.Drawing.Size(71, 20);
-            this.PartIDUpDown.TabIndex = 4;
-            this.PartIDUpDown.ValueChanged += new System.EventHandler(this.PartIDUpDown_ValueChanged);
+            PartIDUpDown.Location = new System.Drawing.Point(225, 14);
+            PartIDUpDown.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            PartIDUpDown.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
+            PartIDUpDown.Name = "PartIDUpDown";
+            PartIDUpDown.Size = new System.Drawing.Size(83, 23);
+            PartIDUpDown.TabIndex = 4;
+            PartIDUpDown.ValueChanged += PartIDUpDown_ValueChanged;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(144, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Part ID:";
+            label1.AutoSize = true;
+            label1.Location = new System.Drawing.Point(168, 16);
+            label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(45, 15);
+            label1.TabIndex = 3;
+            label1.Text = "Part ID:";
             // 
             // PortalIDUpDown
             // 
-            this.PortalIDUpDown.Location = new System.Drawing.Point(346, 12);
-            this.PortalIDUpDown.Maximum = new decimal(new int[] {
-            65535,
-            0,
-            0,
-            0});
-            this.PortalIDUpDown.Name = "PortalIDUpDown";
-            this.PortalIDUpDown.Size = new System.Drawing.Size(71, 20);
-            this.PortalIDUpDown.TabIndex = 6;
-            this.PortalIDUpDown.ValueChanged += new System.EventHandler(this.PortalIDUpDown_ValueChanged);
+            PortalIDUpDown.Location = new System.Drawing.Point(404, 14);
+            PortalIDUpDown.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            PortalIDUpDown.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
+            PortalIDUpDown.Name = "PortalIDUpDown";
+            PortalIDUpDown.Size = new System.Drawing.Size(83, 23);
+            PortalIDUpDown.TabIndex = 6;
+            PortalIDUpDown.ValueChanged += PortalIDUpDown_ValueChanged;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(280, 14);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Portal Link:";
+            label2.AutoSize = true;
+            label2.Location = new System.Drawing.Point(327, 16);
+            label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(66, 15);
+            label2.TabIndex = 5;
+            label2.Text = "Portal Link:";
             // 
             // FlagsCheckedListBox1
             // 
-            this.FlagsCheckedListBox1.CheckOnClick = true;
-            this.FlagsCheckedListBox1.FormattingEnabled = true;
-            this.FlagsCheckedListBox1.Items.AddRange(new object[] {
-            "0 - AvoidUnk0",
-            "1 - AvoidUnk1",
-            "2 - IsFootpath",
-            "3 - IsUnderground",
-            "4 - [Not used]",
-            "5 - [Not used]",
-            "6 - IsSteepSlope",
-            "7 - IsWater"});
-            this.FlagsCheckedListBox1.Location = new System.Drawing.Point(10, 68);
-            this.FlagsCheckedListBox1.Name = "FlagsCheckedListBox1";
-            this.FlagsCheckedListBox1.Size = new System.Drawing.Size(131, 124);
-            this.FlagsCheckedListBox1.TabIndex = 10;
-            this.FlagsCheckedListBox1.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.FlagsCheckedListBox1_ItemCheck);
+            FlagsCheckedListBox1.CheckOnClick = true;
+            FlagsCheckedListBox1.FormattingEnabled = true;
+            FlagsCheckedListBox1.Items.AddRange(new object[] { "0 - Small Poly", "1 - Large Poly", "2 - Is Pavement", "3 - Is Underground", "4 - [Not used]", "5 - [Not used]", "6 - Is Too Steep To Walk", "7 - Is Water" });
+            FlagsCheckedListBox1.Location = new System.Drawing.Point(12, 78);
+            FlagsCheckedListBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            FlagsCheckedListBox1.Name = "FlagsCheckedListBox1";
+            FlagsCheckedListBox1.Size = new System.Drawing.Size(152, 130);
+            FlagsCheckedListBox1.TabIndex = 10;
+            FlagsCheckedListBox1.ItemCheck += FlagsCheckedListBox1_ItemCheck;
             // 
             // FlagsCheckedListBox2
             // 
-            this.FlagsCheckedListBox2.CheckOnClick = true;
-            this.FlagsCheckedListBox2.FormattingEnabled = true;
-            this.FlagsCheckedListBox2.Items.AddRange(new object[] {
-            "0 - UndergroundUnk0",
-            "1 - UndergroundUnk1",
-            "2 - UndergroundUnk2",
-            "3 - UndergroundUnk3",
-            "4 - [Not used]",
-            "5 - HasPathNode",
-            "6 - IsInterior",
-            "7 - InteractionUnk"});
-            this.FlagsCheckedListBox2.Location = new System.Drawing.Point(147, 68);
-            this.FlagsCheckedListBox2.Name = "FlagsCheckedListBox2";
-            this.FlagsCheckedListBox2.Size = new System.Drawing.Size(131, 124);
-            this.FlagsCheckedListBox2.TabIndex = 11;
-            this.FlagsCheckedListBox2.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.FlagsCheckedListBox2_ItemCheck);
+            FlagsCheckedListBox2.CheckOnClick = true;
+            FlagsCheckedListBox2.FormattingEnabled = true;
+            FlagsCheckedListBox2.Items.AddRange(new object[] { "0 - AudioProperties1", "1 - AudioProperties2", "2 - AudioProperties3", "3 - AudioProperties4", "4 - [Not used]", "5 - Near Car Node", "6 - Is Interior", "7 - Is Isolated" });
+            FlagsCheckedListBox2.Location = new System.Drawing.Point(172, 78);
+            FlagsCheckedListBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            FlagsCheckedListBox2.Name = "FlagsCheckedListBox2";
+            FlagsCheckedListBox2.Size = new System.Drawing.Size(152, 130);
+            FlagsCheckedListBox2.TabIndex = 11;
+            FlagsCheckedListBox2.ItemCheck += FlagsCheckedListBox2_ItemCheck;
             // 
             // FlagsCheckedListBox3
             // 
-            this.FlagsCheckedListBox3.CheckOnClick = true;
-            this.FlagsCheckedListBox3.FormattingEnabled = true;
-            this.FlagsCheckedListBox3.Items.AddRange(new object[] {
-            "1 - IsFlatGround",
-            "2 - IsRoad",
-            "3 - IsCellEdge",
-            "4 - IsTrainTrack",
-            "5 - IsShallowWater",
-            "6 - FootpathUnk1",
-            "7 - FootpathUnk2",
-            "8 - FootpathMall"});
-            this.FlagsCheckedListBox3.Location = new System.Drawing.Point(284, 68);
-            this.FlagsCheckedListBox3.Name = "FlagsCheckedListBox3";
-            this.FlagsCheckedListBox3.Size = new System.Drawing.Size(131, 124);
-            this.FlagsCheckedListBox3.TabIndex = 12;
-            this.FlagsCheckedListBox3.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.FlagsCheckedListBox3_ItemCheck);
+            FlagsCheckedListBox3.CheckOnClick = true;
+            FlagsCheckedListBox3.FormattingEnabled = true;
+            FlagsCheckedListBox3.Items.AddRange(new object[] { "1 - Network Spawn Candidate", "2 - Is Road", "3 - Lies Along Edge of Mesh", "4 - Is Train Track", "5 - Is Shallow Water", "6 - Ped Density1", "7 - Ped Density2", "8 - Ped Density3" });
+            FlagsCheckedListBox3.Location = new System.Drawing.Point(331, 78);
+            FlagsCheckedListBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            FlagsCheckedListBox3.Name = "FlagsCheckedListBox3";
+            FlagsCheckedListBox3.Size = new System.Drawing.Size(152, 130);
+            FlagsCheckedListBox3.TabIndex = 12;
+            FlagsCheckedListBox3.ItemCheck += FlagsCheckedListBox3_ItemCheck;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 52);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Flags:";
+            label5.AutoSize = true;
+            label5.Location = new System.Drawing.Point(8, 60);
+            label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label5.Name = "label5";
+            label5.Size = new System.Drawing.Size(37, 15);
+            label5.TabIndex = 9;
+            label5.Text = "Flags:";
             // 
             // FlagsCheckedListBox4
             // 
-            this.FlagsCheckedListBox4.CheckOnClick = true;
-            this.FlagsCheckedListBox4.FormattingEnabled = true;
-            this.FlagsCheckedListBox4.Items.AddRange(new object[] {
-            "0 - SlopeSouth",
-            "1 - SlopeSouthEast",
-            "2 - SlopeEast",
-            "3 - SlopeNorthEast",
-            "4 - SlopeNorth",
-            "5 - SlopeNorthWest",
-            "6 - SlopeWest",
-            "7 - SlopeSouthWest"});
-            this.FlagsCheckedListBox4.Location = new System.Drawing.Point(421, 68);
-            this.FlagsCheckedListBox4.Name = "FlagsCheckedListBox4";
-            this.FlagsCheckedListBox4.Size = new System.Drawing.Size(131, 124);
-            this.FlagsCheckedListBox4.TabIndex = 13;
-            this.FlagsCheckedListBox4.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.FlagsCheckedListBox4_ItemCheck);
+            FlagsCheckedListBox4.CheckOnClick = true;
+            FlagsCheckedListBox4.FormattingEnabled = true;
+            FlagsCheckedListBox4.Items.AddRange(new object[] { "0 - SlopeSouth", "1 - SlopeSouthEast", "2 - SlopeEast", "3 - SlopeNorthEast", "4 - SlopeNorth", "5 - SlopeNorthWest", "6 - SlopeWest", "7 - SlopeSouthWest" });
+            FlagsCheckedListBox4.Location = new System.Drawing.Point(491, 78);
+            FlagsCheckedListBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            FlagsCheckedListBox4.Name = "FlagsCheckedListBox4";
+            FlagsCheckedListBox4.Size = new System.Drawing.Size(152, 130);
+            FlagsCheckedListBox4.TabIndex = 13;
+            FlagsCheckedListBox4.ItemCheck += FlagsCheckedListBox4_ItemCheck;
             // 
             // UnkXUpDown
             // 
-            this.UnkXUpDown.Location = new System.Drawing.Point(82, 213);
-            this.UnkXUpDown.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.UnkXUpDown.Name = "UnkXUpDown";
-            this.UnkXUpDown.Size = new System.Drawing.Size(59, 20);
-            this.UnkXUpDown.TabIndex = 15;
-            this.UnkXUpDown.ValueChanged += new System.EventHandler(this.UnkXUpDown_ValueChanged);
+            UnkXUpDown.Location = new System.Drawing.Point(96, 246);
+            UnkXUpDown.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            UnkXUpDown.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
+            UnkXUpDown.Name = "UnkXUpDown";
+            UnkXUpDown.Size = new System.Drawing.Size(69, 23);
+            UnkXUpDown.TabIndex = 15;
+            UnkXUpDown.ValueChanged += UnkXUpDown_ValueChanged;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 215);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 13);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "UnknownX:";
+            label3.AutoSize = true;
+            label3.Location = new System.Drawing.Point(15, 248);
+            label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(68, 15);
+            label3.TabIndex = 14;
+            label3.Text = "UnknownX:";
             // 
             // UnkYUpDown
             // 
-            this.UnkYUpDown.Location = new System.Drawing.Point(219, 213);
-            this.UnkYUpDown.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.UnkYUpDown.Name = "UnkYUpDown";
-            this.UnkYUpDown.Size = new System.Drawing.Size(59, 20);
-            this.UnkYUpDown.TabIndex = 17;
-            this.UnkYUpDown.ValueChanged += new System.EventHandler(this.UnkYUpDown_ValueChanged);
+            UnkYUpDown.Location = new System.Drawing.Point(255, 246);
+            UnkYUpDown.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            UnkYUpDown.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
+            UnkYUpDown.Name = "UnkYUpDown";
+            UnkYUpDown.Size = new System.Drawing.Size(69, 23);
+            UnkYUpDown.TabIndex = 17;
+            UnkYUpDown.ValueChanged += UnkYUpDown_ValueChanged;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(150, 215);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 13);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "UnknownY:";
+            label4.AutoSize = true;
+            label4.Location = new System.Drawing.Point(175, 248);
+            label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(68, 15);
+            label4.TabIndex = 16;
+            label4.Text = "UnknownY:";
             // 
             // DeletePolyButton
             // 
-            this.DeletePolyButton.Enabled = false;
-            this.DeletePolyButton.Location = new System.Drawing.Point(123, 263);
-            this.DeletePolyButton.Name = "DeletePolyButton";
-            this.DeletePolyButton.Size = new System.Drawing.Size(90, 23);
-            this.DeletePolyButton.TabIndex = 19;
-            this.DeletePolyButton.Text = "Delete Polygon";
-            this.DeletePolyButton.UseVisualStyleBackColor = true;
-            this.DeletePolyButton.Click += new System.EventHandler(this.DeletePolyButton_Click);
+            DeletePolyButton.Enabled = false;
+            DeletePolyButton.Location = new System.Drawing.Point(144, 303);
+            DeletePolyButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            DeletePolyButton.Name = "DeletePolyButton";
+            DeletePolyButton.Size = new System.Drawing.Size(105, 27);
+            DeletePolyButton.TabIndex = 19;
+            DeletePolyButton.Text = "Delete Polygon";
+            DeletePolyButton.UseVisualStyleBackColor = true;
+            DeletePolyButton.Click += DeletePolyButton_Click;
             // 
             // AddToProjectButton
             // 
-            this.AddToProjectButton.Enabled = false;
-            this.AddToProjectButton.Location = new System.Drawing.Point(27, 263);
-            this.AddToProjectButton.Name = "AddToProjectButton";
-            this.AddToProjectButton.Size = new System.Drawing.Size(90, 23);
-            this.AddToProjectButton.TabIndex = 18;
-            this.AddToProjectButton.Text = "Add to Project";
-            this.AddToProjectButton.UseVisualStyleBackColor = true;
-            this.AddToProjectButton.Click += new System.EventHandler(this.AddToProjectButton_Click);
+            AddToProjectButton.Enabled = false;
+            AddToProjectButton.Location = new System.Drawing.Point(31, 303);
+            AddToProjectButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            AddToProjectButton.Name = "AddToProjectButton";
+            AddToProjectButton.Size = new System.Drawing.Size(105, 27);
+            AddToProjectButton.TabIndex = 18;
+            AddToProjectButton.Text = "Add to Project";
+            AddToProjectButton.UseVisualStyleBackColor = true;
+            AddToProjectButton.Click += AddToProjectButton_Click;
             // 
             // PortalCountUpDown
             // 
-            this.PortalCountUpDown.Location = new System.Drawing.Point(495, 12);
-            this.PortalCountUpDown.Maximum = new decimal(new int[] {
-            15,
-            0,
-            0,
-            0});
-            this.PortalCountUpDown.Name = "PortalCountUpDown";
-            this.PortalCountUpDown.Size = new System.Drawing.Size(57, 20);
-            this.PortalCountUpDown.TabIndex = 8;
-            this.PortalCountUpDown.ValueChanged += new System.EventHandler(this.PortalCountUpDown_ValueChanged);
+            PortalCountUpDown.Location = new System.Drawing.Point(578, 14);
+            PortalCountUpDown.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            PortalCountUpDown.Maximum = new decimal(new int[] { 15, 0, 0, 0 });
+            PortalCountUpDown.Name = "PortalCountUpDown";
+            PortalCountUpDown.Size = new System.Drawing.Size(66, 23);
+            PortalCountUpDown.TabIndex = 8;
+            PortalCountUpDown.ValueChanged += PortalCountUpDown_ValueChanged;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(424, 14);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(67, 13);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "Portal count:";
+            label6.AutoSize = true;
+            label6.Location = new System.Drawing.Point(495, 16);
+            label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label6.Name = "label6";
+            label6.Size = new System.Drawing.Size(75, 15);
+            label6.TabIndex = 7;
+            label6.Text = "Portal count:";
             // 
             // EditYnvPolyPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(562, 404);
-            this.Controls.Add(this.PortalCountUpDown);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.DeletePolyButton);
-            this.Controls.Add(this.AddToProjectButton);
-            this.Controls.Add(this.UnkYUpDown);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.UnkXUpDown);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.FlagsCheckedListBox4);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.FlagsCheckedListBox3);
-            this.Controls.Add(this.FlagsCheckedListBox2);
-            this.Controls.Add(this.FlagsCheckedListBox1);
-            this.Controls.Add(this.PortalIDUpDown);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.PartIDUpDown);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.AreaIDUpDown);
-            this.Controls.Add(this.label92);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "EditYnvPolyPanel";
-            this.Text = "Edit Ynv Poly";
-            ((System.ComponentModel.ISupportInitialize)(this.AreaIDUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PartIDUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PortalIDUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UnkXUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UnkYUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PortalCountUpDown)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(656, 466);
+            Controls.Add(PortalCountUpDown);
+            Controls.Add(label6);
+            Controls.Add(DeletePolyButton);
+            Controls.Add(AddToProjectButton);
+            Controls.Add(UnkYUpDown);
+            Controls.Add(label4);
+            Controls.Add(UnkXUpDown);
+            Controls.Add(label3);
+            Controls.Add(FlagsCheckedListBox4);
+            Controls.Add(label5);
+            Controls.Add(FlagsCheckedListBox3);
+            Controls.Add(FlagsCheckedListBox2);
+            Controls.Add(FlagsCheckedListBox1);
+            Controls.Add(PortalIDUpDown);
+            Controls.Add(label2);
+            Controls.Add(PartIDUpDown);
+            Controls.Add(label1);
+            Controls.Add(AreaIDUpDown);
+            Controls.Add(label92);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Name = "EditYnvPolyPanel";
+            Text = "Edit Ynv Poly";
+            ((System.ComponentModel.ISupportInitialize)AreaIDUpDown).EndInit();
+            ((System.ComponentModel.ISupportInitialize)PartIDUpDown).EndInit();
+            ((System.ComponentModel.ISupportInitialize)PortalIDUpDown).EndInit();
+            ((System.ComponentModel.ISupportInitialize)UnkXUpDown).EndInit();
+            ((System.ComponentModel.ISupportInitialize)UnkYUpDown).EndInit();
+            ((System.ComponentModel.ISupportInitialize)PortalCountUpDown).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
