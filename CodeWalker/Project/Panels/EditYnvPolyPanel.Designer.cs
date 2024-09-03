@@ -124,7 +124,7 @@
             FlagsCheckedListBox1.Location = new System.Drawing.Point(12, 78);
             FlagsCheckedListBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             FlagsCheckedListBox1.Name = "FlagsCheckedListBox1";
-            FlagsCheckedListBox1.Size = new System.Drawing.Size(152, 130);
+            FlagsCheckedListBox1.Size = new System.Drawing.Size(152, 148);
             FlagsCheckedListBox1.TabIndex = 10;
             FlagsCheckedListBox1.ItemCheck += FlagsCheckedListBox1_ItemCheck;
             // 
@@ -136,7 +136,7 @@
             FlagsCheckedListBox2.Location = new System.Drawing.Point(172, 78);
             FlagsCheckedListBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             FlagsCheckedListBox2.Name = "FlagsCheckedListBox2";
-            FlagsCheckedListBox2.Size = new System.Drawing.Size(152, 130);
+            FlagsCheckedListBox2.Size = new System.Drawing.Size(152, 148);
             FlagsCheckedListBox2.TabIndex = 11;
             FlagsCheckedListBox2.ItemCheck += FlagsCheckedListBox2_ItemCheck;
             // 
@@ -144,11 +144,11 @@
             // 
             FlagsCheckedListBox3.CheckOnClick = true;
             FlagsCheckedListBox3.FormattingEnabled = true;
-            FlagsCheckedListBox3.Items.AddRange(new object[] { "1 - Network Spawn Candidate", "2 - Is Road", "3 - Lies Along Edge of Mesh", "4 - Is Train Track", "5 - Is Shallow Water", "6 - PedDensity1", "7 - PedDensity2", "8 - PedDensity3" });
+            FlagsCheckedListBox3.Items.AddRange(new object[] { "1 - Can Spawn Peds", "2 - Is Road", "3 - Along Edge of Mesh", "4 - Is Train Track", "5 - Is Shallow Water", "6 - PedDensity1", "7 - PedDensity2", "8 - PedDensity3" });
             FlagsCheckedListBox3.Location = new System.Drawing.Point(331, 78);
             FlagsCheckedListBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             FlagsCheckedListBox3.Name = "FlagsCheckedListBox3";
-            FlagsCheckedListBox3.Size = new System.Drawing.Size(152, 130);
+            FlagsCheckedListBox3.Size = new System.Drawing.Size(152, 148);
             FlagsCheckedListBox3.TabIndex = 12;
             FlagsCheckedListBox3.ItemCheck += FlagsCheckedListBox3_ItemCheck;
             // 
@@ -170,13 +170,13 @@
             FlagsCheckedListBox4.Location = new System.Drawing.Point(491, 78);
             FlagsCheckedListBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             FlagsCheckedListBox4.Name = "FlagsCheckedListBox4";
-            FlagsCheckedListBox4.Size = new System.Drawing.Size(152, 130);
+            FlagsCheckedListBox4.Size = new System.Drawing.Size(152, 148);
             FlagsCheckedListBox4.TabIndex = 13;
             FlagsCheckedListBox4.ItemCheck += FlagsCheckedListBox4_ItemCheck;
             // 
             // UnkXUpDown
             // 
-            UnkXUpDown.Location = new System.Drawing.Point(96, 246);
+            UnkXUpDown.Location = new System.Drawing.Point(230, 302);
             UnkXUpDown.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             UnkXUpDown.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
             UnkXUpDown.Name = "UnkXUpDown";
@@ -187,16 +187,16 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new System.Drawing.Point(15, 248);
+            label3.Location = new System.Drawing.Point(149, 304);
             label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(68, 15);
+            label3.Size = new System.Drawing.Size(60, 15);
             label3.TabIndex = 14;
-            label3.Text = "UnknownX:";
+            label3.Text = "CentroidX";
             // 
             // UnkYUpDown
             // 
-            UnkYUpDown.Location = new System.Drawing.Point(255, 246);
+            UnkYUpDown.Location = new System.Drawing.Point(389, 302);
             UnkYUpDown.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             UnkYUpDown.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
             UnkYUpDown.Name = "UnkYUpDown";
@@ -207,17 +207,17 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new System.Drawing.Point(175, 248);
+            label4.Location = new System.Drawing.Point(309, 304);
             label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new System.Drawing.Size(68, 15);
+            label4.Size = new System.Drawing.Size(60, 15);
             label4.TabIndex = 16;
-            label4.Text = "UnknownY:";
+            label4.Text = "CentroidY";
             // 
             // DeletePolyButton
             // 
             DeletePolyButton.Enabled = false;
-            DeletePolyButton.Location = new System.Drawing.Point(144, 303);
+            DeletePolyButton.Location = new System.Drawing.Point(316, 331);
             DeletePolyButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             DeletePolyButton.Name = "DeletePolyButton";
             DeletePolyButton.Size = new System.Drawing.Size(105, 27);
@@ -229,7 +229,7 @@
             // AddToProjectButton
             // 
             AddToProjectButton.Enabled = false;
-            AddToProjectButton.Location = new System.Drawing.Point(31, 303);
+            AddToProjectButton.Location = new System.Drawing.Point(203, 331);
             AddToProjectButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             AddToProjectButton.Name = "AddToProjectButton";
             AddToProjectButton.Size = new System.Drawing.Size(105, 27);
