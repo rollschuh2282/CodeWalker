@@ -1554,7 +1554,7 @@ namespace CodeWalker.Project
 
         public void OpenFolder()
         {
-            if (FolderBrowserDialog.ShowDialogNew() != DialogResult.OK) return;
+            if (FolderBrowserDialog.ShowDialog() != DialogResult.OK) return;
             var folder = FolderBrowserDialog.SelectedPath;
 
             var files = Directory.GetFiles(folder, "*", SearchOption.AllDirectories);

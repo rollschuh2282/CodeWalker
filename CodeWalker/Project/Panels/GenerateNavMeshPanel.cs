@@ -773,9 +773,9 @@ namespace CodeWalker.Project.Panels
 
                     //TODO: add poly edges!
 
-                    ypoly.B02_IsFootpath = (poly.Material.Index == 1);
+                    ypoly.IsPavement = (poly.Material.Index == 1);
 
-                    ypoly.B18_IsRoad = (poly.Material.Index == 4);//4,5,6
+                    ypoly.IsRoad = (poly.Material.Index == 4);//4,5,6
 
 
                 }
