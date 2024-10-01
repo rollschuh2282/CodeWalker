@@ -124,7 +124,7 @@
             FlagsCheckedListBox1.Location = new System.Drawing.Point(12, 78);
             FlagsCheckedListBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             FlagsCheckedListBox1.Name = "FlagsCheckedListBox1";
-            FlagsCheckedListBox1.Size = new System.Drawing.Size(152, 148);
+            FlagsCheckedListBox1.Size = new System.Drawing.Size(152, 166);
             FlagsCheckedListBox1.TabIndex = 10;
             FlagsCheckedListBox1.ItemCheck += FlagsCheckedListBox1_ItemCheck;
             // 
@@ -132,11 +132,11 @@
             // 
             FlagsCheckedListBox2.CheckOnClick = true;
             FlagsCheckedListBox2.FormattingEnabled = true;
-            FlagsCheckedListBox2.Items.AddRange(new object[] { "0 - AudioProperties1", "1 - AudioProperties2", "2 - AudioProperties3", "3 - AudioProperties4", "4 - [Not used]", "5 - Near Car Node", "6 - Is Interior", "7 - Is Isolated" });
+            FlagsCheckedListBox2.Items.AddRange(new object[] { "0 - AudioProperties1", "1 - AudioProperties2", "2 - AudioProperties3", "3 - AudioProperties4", "4 - [Not used]", "5 - Near Car Node", "6 - Is Interior", "7 - Is Isolated", "8 - ZeroAreaStitchPoly" });
             FlagsCheckedListBox2.Location = new System.Drawing.Point(172, 78);
             FlagsCheckedListBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             FlagsCheckedListBox2.Name = "FlagsCheckedListBox2";
-            FlagsCheckedListBox2.Size = new System.Drawing.Size(152, 148);
+            FlagsCheckedListBox2.Size = new System.Drawing.Size(152, 166);
             FlagsCheckedListBox2.TabIndex = 11;
             FlagsCheckedListBox2.ItemCheck += FlagsCheckedListBox2_ItemCheck;
             // 
@@ -144,11 +144,11 @@
             // 
             FlagsCheckedListBox3.CheckOnClick = true;
             FlagsCheckedListBox3.FormattingEnabled = true;
-            FlagsCheckedListBox3.Items.AddRange(new object[] { "1 - Can Spawn Peds", "2 - Is Road", "3 - Along Edge of Mesh", "4 - Is Train Track", "5 - Is Shallow Water", "6 - PedDensity1", "7 - PedDensity2", "8 - PedDensity3" });
+            FlagsCheckedListBox3.Items.AddRange(new object[] { "0 - Can Spawn Peds", "1 - Is Road", "2 - Along Edge of Mesh", "3 - Is Train Track", "4 - Is Shallow Water", "5 - PedDensity1", "6 - PedDensity2", "7 - PedDensity3" });
             FlagsCheckedListBox3.Location = new System.Drawing.Point(331, 78);
             FlagsCheckedListBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             FlagsCheckedListBox3.Name = "FlagsCheckedListBox3";
-            FlagsCheckedListBox3.Size = new System.Drawing.Size(152, 148);
+            FlagsCheckedListBox3.Size = new System.Drawing.Size(152, 166);
             FlagsCheckedListBox3.TabIndex = 12;
             FlagsCheckedListBox3.ItemCheck += FlagsCheckedListBox3_ItemCheck;
             // 
@@ -170,7 +170,7 @@
             FlagsCheckedListBox4.Location = new System.Drawing.Point(491, 78);
             FlagsCheckedListBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             FlagsCheckedListBox4.Name = "FlagsCheckedListBox4";
-            FlagsCheckedListBox4.Size = new System.Drawing.Size(152, 148);
+            FlagsCheckedListBox4.Size = new System.Drawing.Size(152, 166);
             FlagsCheckedListBox4.TabIndex = 13;
             FlagsCheckedListBox4.ItemCheck += FlagsCheckedListBox4_ItemCheck;
             // 
